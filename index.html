@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dịch Vụ Đưa Đón 24H | Thuê xe 4–45 chỗ</title>
+  <meta name="description" content="Dịch Vụ Đưa Đón 24H - nhận đưa đón sân bay, đi tỉnh, du lịch, cưới hỏi. Tư vấn loại xe và báo giá theo lịch trình.">
+  <!-- DÁN MÃ META PIXEL VÀO ĐÂY SAU KHI BẠN CÓ MÃ PIXEL -->
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#17202a;background:#f6f8fb;line-height:1.55}
+    a{text-decoration:none}
+    .hero{background:linear-gradient(135deg,#0b63ce,#13a6d9);color:#fff;padding:58px 20px}
+    .wrap{max-width:1050px;margin:auto}
+    .hero h1{font-size:42px;line-height:1.12;margin:0 0 14px}
+    .hero p{font-size:19px;max-width:700px;margin:0 0 25px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700}
+    .btn-main{background:#fff;color:#0b63ce}
+    .btn-dark{background:#123047;color:#fff}
+    section{padding:42px 20px}
+    h2{text-align:center;font-size:30px;margin:0 0 26px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border-radius:16px;padding:23px;box-shadow:0 5px 20px rgba(0,0,0,.07)}
+    .card h3{margin:0 0 8px}
+    .price{background:#fff;border-radius:18px;padding:28px;max-width:760px;margin:auto;box-shadow:0 5px 20px rgba(0,0,0,.07)}
+    .price ul{padding-left:20px}
+    .form{background:#fff;border-radius:18px;padding:26px;max-width:760px;margin:auto;box-shadow:0 5px 20px rgba(0,0,0,.07)}
+    label{display:block;font-weight:700;margin:12px 0 6px}
+    input,textarea{width:100%;padding:13px;border:1px solid #ccd5df;border-radius:9px;font-size:16px}
+    textarea{min-height:110px}
+    .submit{margin-top:16px;border:0;cursor:pointer;width:100%;background:#0b63ce;color:#fff;padding:14px;border-radius:10px;font-size:17px;font-weight:700}
+    .note{font-size:14px;color:#667085}
+    footer{background:#102a43;color:#dbeafe;text-align:center;padding:25px 20px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.hero h1{font-size:32px}.hero{padding:45px 20px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div style="font-weight:800;font-size:18px;margin-bottom:18px">🚐 DỊCH VỤ ĐƯA ĐÓN 24H</div>
+      <h1>Thuê xe theo lịch trình – Báo giá rõ ràng</h1>
+      <p>Nhận đưa đón sân bay, đi tỉnh, du lịch, cưới hỏi và các chuyến đi theo yêu cầu. Xe 4–7–16–29–45 chỗ tùy nhu cầu.</p>
+      <div class="buttons">
+        <a class="btn btn-main" href="#bao-gia">📋 Yêu cầu báo giá</a>
+        <a class="btn btn-dark" href="#lien-he">💬 Liên hệ ngay</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Dịch vụ của chúng tôi</h2>
+      <div class="grid">
+        <div class="card"><h3>✈️ Đưa đón sân bay</h3><p>Đón/trả khách theo thời gian và địa điểm yêu cầu.</p></div>
+        <div class="card"><h3>🚌 Xe đi tỉnh</h3><p>Nhận chuyến đi tỉnh, đi về trong ngày hoặc nhiều ngày.</p></div>
+        <div class="card"><h3>🏖️ Xe du lịch</h3><p>Phục vụ gia đình, nhóm bạn, công ty và đoàn du lịch.</p></div>
+        <div class="card"><h3>💒 Cưới hỏi</h3><p>Đưa đón cô dâu chú rể, gia đình và khách mời.</p></div>
+        <div class="card"><h3>👥 Nhiều loại xe</h3><p>4, 7, 16, 29, 45 chỗ – tư vấn theo số lượng khách.</p></div>
+        <div class="card"><h3>💰 Báo giá theo lịch trình</h3><p>Gửi đầy đủ thông tin chuyến đi để nhận báo giá phù hợp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bao-gia">
+    <div class="wrap">
+      <h2>Gửi lịch trình để báo giá</h2>
+      <div class="form">
+        <label>Họ tên</label>
+        <input id="name" placeholder="Nhập tên của bạn">
+        <label>Số điện thoại</label>
+        <input id="phone" placeholder="Nhập số điện thoại">
+        <label>Ngày đi</label>
+        <input id="date" type="date">
+        <label>Lịch trình</label>
+        <textarea id="route" placeholder="Ví dụ: Mỹ Phước 3 → Đà Lạt, 2 ngày 1 đêm, 16 khách"></textarea>
+        <button class="submit" onclick="sendQuote()">Gửi yêu cầu báo giá</button>
+        <p class="note">Bạn chưa cần đặt xe ngay. Hãy gửi lịch trình để được tư vấn và tham khảo giá.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lien-he">
+    <div class="wrap">
+      <div class="price">
+        <h2 style="text-align:left">📞 Liên hệ</h2>
+        <p><b>Dịch Vụ Đưa Đón 24H</b></p>
+        <p>☎️ Số điện thoại: <b>ĐIỀN SỐ ĐIỆN THOẠI</b></p>
+        <p>💬 Zalo/Messenger: <b>ĐIỀN THÔNG TIN LIÊN HỆ</b></p>
+        <p class="note">Khi có số điện thoại/Zalo/Messenger, mình có thể thay các nút liên hệ thành nút bấm trực tiếp.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Dịch Vụ Đưa Đón 24H</footer>
+
+  <script>
+    function sendQuote(){
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const date = document.getElementById('date').value;
+      const route = document.getElementById('route').value.trim();
+      if(!name || !phone || !route){
+        alert('Bạn vui lòng nhập tên, số điện thoại và lịch trình.');
+        return;
+      }
+      alert('Đã nhận thông tin. Sau khi kết nối Zalo/Messenger, nút này sẽ gửi trực tiếp cho bạn.');
+    }
+  </script>
+</body>
+</html>
