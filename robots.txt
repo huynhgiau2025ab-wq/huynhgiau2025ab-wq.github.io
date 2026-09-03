@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gia-bao-duadon-24h.netlify.app/sitemap.xml
