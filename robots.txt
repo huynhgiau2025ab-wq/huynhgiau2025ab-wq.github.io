@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huynhgiau2025ab-wq.github.io/sitemap.xml
