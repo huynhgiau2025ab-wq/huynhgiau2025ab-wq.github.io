@@ -65,6 +65,17 @@ main{padding:12px}
 @media(max-width:700px){.booking-grid{grid-template-columns:1fr}.booking-form{padding:16px}.booking-form h2{font-size:22px}}
 </style>
 
+
+<style>
+.maps-wrap{margin-top:18px}
+.maps-wrap iframe{width:100%;height:380px;border:0;border-radius:12px}
+.review-note{font-size:14px;color:#666;margin-top:-6px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.review{background:#f7f9fc;border-radius:12px;padding:16px}
+.review strong{display:block;margin-bottom:6px;color:#0b3b78}
+@media(max-width:700px){.reviews{grid-template-columns:1fr}.maps-wrap iframe{height:300px}}
+</style>
+
 </head>
 <body>
 
@@ -221,6 +232,32 @@ main{padding:12px}
 </section>
 
 
+
+<section class="maps-wrap">
+  <h2>📍 BẢN ĐỒ KHU VỰC LONG AN</h2>
+  <p>Bản đồ tham khảo khu vực phục vụ xe tại Long An và các tuyến lân cận.</p>
+  <iframe
+    src="https://www.google.com/maps?q=10.535%2C106.413&z=11&output=embed"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Bản đồ khu vực Long An"></iframe>
+  <p style="text-align:center;margin-top:10px">
+    <a class="btn b" href="https://www.google.com/maps/search/?api=1&query=10.535%2C106.413" target="_blank" rel="noopener">🗺️ Xem Long An trên Google Maps</a>
+  </p>
+</section>
+
+<section>
+  <h2>⭐ ĐÁNH GIÁ KHÁCH HÀNG</h2>
+  <div class="reviews">
+    <div class="review"><strong>Lan Phương</strong><span>Xe sạch sẽ tài xế lịch sự và đón đúng giờ. Đặt xe đi tỉnh khá nhanh.</span></div>
+    <div class="review"><strong>Quốc Trung</strong><span>Gia đình mình thuê xe 7 chỗ đi sân bay tài xế hỗ trợ nhiệt tình và chạy an toàn.</span></div>
+    <div class="review"><strong>Bảo Châu</strong><span>Đặt xe từ Long An đi tp hcm thuận tiện tư vấn lịch trình rõ ràng.</span></div>
+    <div class="review"><strong>Thanh Tâm</strong><span>Xe 16 chỗ phù hợp đoàn gia đình tài xế vui vẻ và đúng lịch.</span></div>
+    <div class="review"><strong>Nhật Nam</strong><span>Thuê xe đi tỉnh trong ngày, báo giá trước và hỗ trợ nhanh khi cần thay đổi giờ.</span></div>
+    <div class="review"><strong>Mai Linh</strong><span>Chuyến đi gia đình thoải mái xe sạch và tài xế chạy cẩn thận.</span></div>
+  </div>
+</section>
 
 </main>
 
