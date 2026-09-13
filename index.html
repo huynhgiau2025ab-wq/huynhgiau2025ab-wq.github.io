@@ -14,6 +14,25 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-18438179670');
+
+  // Google Ads: ghi nhận chuyển đổi khi khách gửi form đặt xe
+  function giaBaoFormConversion(form) {
+    if (typeof gtag !== 'function') return true;
+    var submitted = false;
+    function submitForm() {
+      if (submitted) return;
+      submitted = true;
+      HTMLFormElement.prototype.submit.call(form);
+    }
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18438179670/xuwyCNqfyvMcENaWgdhE',
+      'value': 1.0,
+      'currency': 'VND',
+      'event_callback': submitForm
+    });
+    setTimeout(submitForm, 1200);
+    return false;
+  }
 </script>
 
 <style>
@@ -104,7 +123,7 @@
 </head><body>
 <header class="hero"><h1>THUÊ XE CÓ TÀI XẾ 4, 7, 16, 29 CHỖ – TP.HCM & MIỀN NAM – ĐƯA ĐÓN 24H</h1><p>Nhận thuê xe riêng có tài xế tại TP.HCM, Bình Dương, Đồng Nai, Long An và các tỉnh lân cận • Đưa đón sân bay • Đi tỉnh • Du lịch • Công tác • Về quê</p><a class="cta" href="tel:0342127750">📞 GỌI ĐẶT XE 24H</a></header><section class="home-cover"><img src="https://huynhgiau2025ab-wq.github.io/assets/anh-bia-trang-chu.png" alt="Xe dịch vụ Gia Bảo - đưa đón 24H" loading="eager"></section>
 <section class="booking-form-wrap" id="dat-xe">
-  <form class="booking-form" action="https://formsubmit.co/huynhgiau2025ab@gmail.com" method="POST">
+  <form class="booking-form" action="https://formsubmit.co/huynhgiau2025ab@gmail.com" method="POST" onsubmit="return giaBaoFormConversion(this)">
     <h2>📝 ĐẶT XE NHANH – GIA BẢO</h2>
     <p class="form-note">Điền thông tin, Gia Bảo sẽ liên hệ xác nhận giá và lịch xe.</p>
     <input type="hidden" name="_subject" value="ĐƠN ĐẶT XE MỚI - XE DỊCH VỤ GIA BẢO">
