@@ -69,6 +69,15 @@ footer{background:#101827;color:#fff;text-align:center;padding:30px 20px;margin-
   .btn-dat{padding:8px 10px;font-size:12px}
   .link-grid,.booking-grid{grid-template-columns:1fr}
 }
+
+/* === ẢNH XE 4 CHỖ — CHỈ DÀNH CHO TRANG XE 4 CHỖ === */
+.car-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:0 auto 25px;max-width:1200px}
+.car-gallery figure{margin:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.car-gallery img{display:block;width:100%;height:250px;object-fit:cover}
+.car-gallery figcaption{text-align:center;padding:10px 8px;font-weight:700;color:#1a365d;font-size:16px}
+@media(max-width:768px){.car-gallery{grid-template-columns:repeat(2,1fr)}.car-gallery img{height:210px}}
+@media(max-width:480px){.car-gallery{grid-template-columns:1fr}.car-gallery img{height:auto;max-height:280px}}
+
 </style>
 </head>
 <body>
@@ -95,6 +104,21 @@ footer{background:#101827;color:#fff;text-align:center;padding:30px 20px;margin-
 <p style="font-size:20px;opacity:0.95;max-width:800px;margin:0 auto">Đón tại Bình Chuẩn, Lái Thiêu, An Phú, Bình Nhâm → Long Xuyên, Châu Đốc, Tân Châu, Chợ Mới<br/><strong>Giá trọn gói · Không phát sinh · Xe riêng tận nơi</strong></p>
 <p style="margin-top:15px;font-size:18px">📞 Hotline/Zalo: <strong style="color:#ffd700;font-size:22px">0342 127 750</strong></p>
 </header>
+
+<section class="car-gallery" aria-label="Hình ảnh xe 4 chỗ">
+  <figure>
+    <img src="image-01.webp" alt="Xe 4 chỗ Toyota Vios dịch vụ Thuận An đi An Giang" loading="lazy">
+    <figcaption>🚗 Xe 4 chỗ Toyota Vios</figcaption>
+  </figure>
+  <figure>
+    <img src="image-02.webp" alt="Xe 4 chỗ Hyundai Accent dịch vụ Thuận An đi An Giang" loading="lazy">
+    <figcaption>🚗 Xe 4 chỗ Hyundai Accent</figcaption>
+  </figure>
+  <figure>
+    <img src="image-03.webp" alt="Xe 4 chỗ có tài xế Thuận An Bình Dương đi An Giang" loading="lazy">
+    <figcaption>🚗 Xe 4 chỗ có tài xế</figcaption>
+  </figure>
+</section>
 <main>
 <section>
 <h2>📌 Giới thiệu dịch vụ</h2>
