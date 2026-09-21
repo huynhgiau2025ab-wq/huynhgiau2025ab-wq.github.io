@@ -1,14 +1,8 @@
-<!doctype html>
-<html lang="vi">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thuê Xe Bình Dương | Nhà Xe Gia Bảo</title>
-<meta name="description" content="Nhà Xe Gia Bảo cho thuê xe 4, 7, 16, 29 chỗ có lái tại Bình Dương, TP.HCM và các tỉnh miền Nam. Đưa đón sân bay, du lịch, công tác, đi tỉnh.">
-<link rel="stylesheet" href="style.css">
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thuê Xe Bình Dương | Nhà Xe Gia Bảo</title><meta name="description" content="Nhà Xe Gia Bảo cho thuê xe 4, 7, 16, 29 chỗ có lái tại Bình Dương, TP.HCM và các tỉnh miền Nam. Đưa đón sân bay, du lịch, công tác, đi tỉnh."><link rel="stylesheet" href="style.css">
 <style>
 .image-card{overflow:hidden;padding-top:0}.image-card>img{width:100%;height:190px;object-fit:cover;display:block}.image-card h3,.image-card p,.image-card .more,.image-card .pill-btn{margin-left:24px;margin-right:24px}.image-card h3{margin-top:20px}.image-card p{min-height:48px}.route-photo-img{width:100%;height:150px;object-fit:cover;display:block}.route-card{overflow:hidden}
 </style>
+
 <style>
 footer{
   background:#10213b;
@@ -61,7 +55,8 @@ footer{
   color:#d7e1ee;
 }
 @media(max-width:1000px){
-  .footer-inner{grid-template-columns:1fr 1fr;}
+  .footer-inner{grid-template-columns:1fr 1fr;
+}
 }
 @media(max-width:800px){
   .footer-inner{grid-template-columns:1fr;}
@@ -69,59 +64,233 @@ footer{
 }
 </style>
 
-<!-- === NÚT LIÊN HỆ NỔI - CÓ BIỂU TƯỢNG ĐẸP === -->
+
 <style>
-.fixed-contact-bar {
-    position: fixed;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 9999;
+.floating{
+ position:fixed!important;right:18px!important;bottom:24px!important;z-index:99999!important;
+ display:flex!important;flex-direction:column!important;gap:10px!important;align-items:center!important;
 }
-.contact-btn {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 26px;
-    text-decoration: none;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-    transition: transform 0.2s ease;
+.floating .float{
+ width:58px!important;height:58px!important;border-radius:50%!important;
+ display:flex!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;
+ text-decoration:none!important;color:#fff!important;font-weight:800!important;
+ box-shadow:0 4px 14px rgba(0,0,0,.25)!important;border:3px solid #fff!important;
+ box-sizing:border-box!important;line-height:1!important;
 }
-.contact-btn:hover { transform: scale(1.15); }
-.btn-fb    { background: #1877F2; }
-.btn-mess  { background: #0084FF; }
-.btn-tg    { background: #2AABEE; }
-.btn-zalo  { background: #0091FF; }
-.btn-call  { background: #E53935; }
+.floating .float small{font-size:8px!important;margin-top:3px!important;font-weight:800!important;}
+.fcall{background:#e91b23!important}.fzalo{background:#0878e8!important}
+.fbook{background:#08a95b!important}.ffacebook{background:#1877f2!important}
+.fmessenger{background:#0084ff!important}.ftelegram{background:#229ed9!important}
+.call-icon{font-size:28px!important;line-height:25px!important}
+.zalo-icon{font-size:14px!important;font-weight:900!important}
+.car-icon{font-size:24px!important;line-height:25px!important}
+.fb-icon{font-size:31px!important;font-family:Arial,sans-serif!important}
+.msg-icon,.tg-icon{font-size:25px!important;line-height:25px!important}
+@media(max-width:600px){
+ .floating{right:10px!important;bottom:14px!important;gap:7px!important}
+ .floating .float{width:50px!important;height:50px!important}
+ .call-icon{font-size:24px!important}.car-icon{font-size:21px!important}.fb-icon{font-size:27px!important}
+ .msg-icon,.tg-icon{font-size:22px!important}.zalo-icon{font-size:12px!important}
+ .floating .float small{font-size:7px!important}
+}
+</style>
+</head><body>
+
+<header class="top" id="top"><div class="head container"><a class="brand" href="index.html"><img src="./logo.jpg" alt="Nhà Xe Gia Bảo"><div><div class="brand-title">NHÀ XE <span>GIA BẢO</span></div><div class="brand-sub">AN TOÀN - UY TÍN - CHUYÊN NGHIỆP</div><div class="slogan">Mọi hành trình - Vạn niềm tin</div></div></a><div class="head-info"><a class="head-chip red" href="tel:0342127750">☎ 0342 127 750</a><a class="head-chip blue" href="https://zalo.me/0342127750">Zalo</a><span class="head-chip">📍 Thuận An, Bình Dương</span><span class="head-chip">⏰ 24/7</span></div></div><nav class="nav"><a class="active" href="index.html">Trang chủ</a><a class="" href="gioi-thieu.html">Giới thiệu</a><a class="" href="dich-vu.html">Dịch vụ</a><a class="" href="bang-gia.html">Bảng giá</a><a class="" href="tuyen-xe.html">Tuyến xe</a><a class="" href="doi-xe.html">Đội xe</a><a class="" href="lien-he.html">Liên hệ</a></nav></header>
+<section class="hero"><img src="./cover.jpg" alt="Nhà Xe Gia Bảo"><div class="hero-copy"><div class="tag">NHÀ XE GIA BẢO</div><h1>THUÊ XE BÌNH DƯƠNG</h1><h2>ĐƯA ĐÓN SÂN BAY - DU LỊCH - CÔNG TÁC - ĐI TỈNH</h2><div class="hero-p">XE ĐỜI MỚI · TÀI XẾ KINH NGHIỆM · GIÁ HỢP LÝ</div><div class="trust"><span>✓ An toàn - Đúng giờ</span><span>✓ Xe sạch, tiện nghi</span><span>✓ Tài xế chuyên nghiệp</span><span>✓ Phục vụ 24/7</span></div></div></section>
+
+<section class="quote" id="bao-gia"><div class="quote-head">🚗 ĐẶT XE NHANH - NHẬN BÁO GIÁ NGAY</div>
+<div class="tabs"><button class="active">Đặt xe</button><button onclick="document.querySelector('#tuyen').scrollIntoView()">Xem tuyến</button></div>
+<form class="quote-form" id="quoteForm">
+<div class="field"><label>📍 Điểm đón</label><input id="from" list="locations" placeholder="Nhập điểm đón" required></div>
+<div class="field"><label>📍 Điểm đến</label><input id="to" list="locations" placeholder="Nhập điểm đến" required></div>
+<div class="field"><label>🚗 Loại xe</label><select id="vehicle"><option value="4">Xe 4 chỗ</option><option value="7">Xe 7 chỗ</option><option value="16">Xe 16 chỗ</option><option value="29">Xe 29 chỗ</option></select></div>
+<div class="field"><label>📅 Ngày đi</label><input type="date"></div>
+<div class="field"><label>⏰ Giờ đi</label><input type="time"></div>
+<div class="field"><label>🔄 Hình thức chuyến</label><select><option>Đi 1 chiều</option><option>Đi về trong ngày</option><option>Khứ hồi</option><option>Thuê theo ngày</option></select></div>
+<div class="field"><label>👥 Số khách</label><input type="number" min="1" placeholder="Ví dụ: 4"></div>
+<div class="field"><label>👤 Họ và tên</label><input placeholder="Nhập họ tên"></div>
+<div class="field"><label>☎ Số điện thoại</label><input type="tel" placeholder="Nhập số điện thoại"></div>
+<div class="field full"><label>📝 Ghi chú lịch trình</label><textarea rows="3" placeholder="Ví dụ: đón tại nhà, có nhiều điểm dừng, cần ghế trẻ em..."></textarea></div>
+<button class="quote-submit">✈️ BÁO GIÁ NGAY</button></form>
+<datalist id="locations"><option>Bình Dương</option><option>TP.HCM</option><option>Vũng Tàu</option><option>Phan Thiết</option><option>Mũi Né</option><option>Đà Lạt</option><option>Nha Trang</option><option>Cần Thơ</option><option>Đồng Nai</option><option>Long An</option><option>Tây Ninh</option><option>Bình Phước</option></datalist>
+<div class="quote-note">Giá trên website là giá tham khảo theo tuyến. Nhân viên sẽ xác nhận lại lịch trình và giá trước khi chốt xe.</div><div class="result" id="quoteResult" hidden></div></section><div class="feature-strip"><div class="feature"><div class="i">🛡️</div><b>AN TOÀN</b><small>Xe bảo dưỡng định kỳ</small></div><div class="feature"><div class="i">👍</div><b>UY TÍN</b><small>Đúng giờ - Đúng hẹn</small></div><div class="feature"><div class="i">👥</div><b>CHUYÊN NGHIỆP</b><small>Tài xế kinh nghiệm</small></div><div class="feature"><div class="i">⏰</div><b>PHỤC VỤ 24/7</b><small>Luôn sẵn sàng hỗ trợ</small></div><div class="feature"><div class="i">💰</div><b>GIÁ HỢP LÝ</b><small>Báo giá minh bạch</small></div></div>
+<section class="section alt" id="dich-vu"><div class="container"><div class="section-title"><div class="eyebrow">DỊCH VỤ</div><h2>Dịch vụ của Nhà Xe Gia Bảo</h2><p>Nhận phục vụ cá nhân, gia đình, doanh nghiệp và đoàn khách với nhiều loại xe có lái.</p></div><div class="grid4">
+<article class="card image-card"><img src="assets/dua-don-san-bay.webp" alt="Đưa đón sân bay"><h3>Đưa đón sân bay</h3><p>Đón và trả khách tại sân bay, chủ động giờ giấc, phù hợp cá nhân và gia đình.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/du-lich.webp" alt="Du lịch - tham quan"><h3>Du lịch - tham quan</h3><p>Xe riêng có lái cho các chuyến đi cuối tuần, nghỉ dưỡng và tham quan.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/city-tour.webp" alt="City Tour"><h3>Công tác - hợp đồng</h3><p>Phục vụ doanh nghiệp, chuyên gia, đoàn công tác và lịch trình nhiều điểm.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/di-chua.webp" alt="Hành hương - viếng chùa"><h3>Hành hương - viếng chùa</h3><p>Đi chùa, hành hương, lễ hội với lịch trình linh hoạt theo đoàn.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/dam-cuoi.webp" alt="Xe cưới hỏi"><h3>Xe cưới hỏi</h3><p>Xe phục vụ lễ cưới, đón dâu, gia đình và khách mời.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/ve-que.webp" alt="Xe gia đình về quê"><h3>Xe gia đình</h3><p>Không gian thoải mái cho gia đình, người lớn tuổi và trẻ nhỏ.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/du-lich-02.webp" alt="Xe đi tỉnh - du lịch"><h3>Xe đi tỉnh</h3><p>Nhận đưa đón từ Bình Dương, TP.HCM đi các tỉnh miền Nam.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/du-lich-02.webp" alt="Xe tiện chuyến"><h3>Xe tiện chuyến</h3><p>Có thể tư vấn lịch trình phù hợp và tối ưu chi phí theo nhu cầu.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+</div></div></section>
+<section class="section" id="doi-xe"><div class="container"><div class="section-title"><div class="eyebrow">ĐỘI XE</div><h2>Đội xe đa dạng - phục vụ linh hoạt</h2><p>Lựa chọn xe theo số lượng khách và nhu cầu lịch trình.</p></div><div class="grid4">
+<article class="card fleet-card image-card"><img src="assets/xe-4-cho-01.jpg" alt="Xe 4 chỗ"><h3>XE 4 CHỖ</h3><p>Tiết kiệm - Phù hợp gia đình</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+<article class="card fleet-card image-card"><img src="assets/xe-7-cho-01.jpg" alt="Xe 7 chỗ"><h3>XE 7 CHỖ</h3><p>Rộng rãi - Thoải mái</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+<article class="card fleet-card image-card"><img src="assets/xe-16-cho-01.png" alt="Xe 16 chỗ"><h3>XE 16 CHỖ</h3><p>Nhóm đông - Du lịch - Công ty</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+<article class="card fleet-card image-card"><img src="assets/xe-29-cho.jpg" alt="Xe 29 chỗ"><h3>XE 29 CHỖ</h3><p>Sự kiện - Tour đoàn - Hành hương</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+</div></div></section>
+<section class="section alt" id="tuyen"><div class="container"><div class="section-title"><div class="eyebrow">BẢNG GIÁ</div><h2>Các tuyến phổ biến</h2><p>Hình ảnh minh họa theo tuyến; giá tham khảo và lịch trình cụ thể sẽ được xác nhận trước khi đặt xe.</p></div><div class="route-grid">
+<article class="route-card"><img class="route-photo-img" src="assets/city-tour.webp" alt="TP.HCM - thành phố Hồ Chí Minh"><div class="route-body"><b>Bình Dương → TP.HCM</b><strong>Từ 300.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/du-lich.webp" alt="Vũng Tàu - biển"><div class="route-body"><b>Bình Dương → Vũng Tàu</b><strong>Từ 860.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/phan-thiet.webp" alt="Phan Thiết"><div class="route-body"><b>Bình Dương → Phan Thiết</b><strong>Từ 1.300.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/di-chua.webp" alt="Đà Lạt"><div class="route-body"><b>Bình Dương → Đà Lạt</b><strong>Từ 2.400.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/du-lich-02.webp" alt="Nha Trang - biển"><div class="route-body"><b>Bình Dương → Nha Trang</b><strong>Từ 2.400.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/can-tho.webp" alt="Cần Thơ - miền Tây"><div class="route-body"><b>Bình Dương → Cần Thơ</b><strong>Từ 1.300.000đ</strong></div></article>
+</div></div></section>
+<section class="area"><div class="container"><h2>KHU VỰC PHỤC VỤ</h2><p style="text-align:center;color:#dbe6f5">Nhận đưa đón tại Bình Dương, TP.HCM và nhiều tỉnh thành miền Nam.</p><div class="area-list"><span>TP. Hồ Chí Minh</span><span>Bình Dương</span><span>Đồng Nai</span><span>Bà Rịa - Vũng Tàu</span><span>Long An</span><span>Bình Phước</span><span>Tây Ninh</span><span>Tiền Giang</span><span>Bến Tre</span><span>Cần Thơ</span><span>Đà Lạt</span><span>Nha Trang</span><span>Phan Thiết</span><span>Cà Mau</span></div></div></section>
+<section class="section"><div class="container"><div class="section-title"><div class="eyebrow">QUY TRÌNH</div><h2>Đặt xe đơn giản - nhanh chóng</h2></div><div class="process"><div class="step"><div class="num">1</div><h3>Gửi lịch trình</h3><p>Điền điểm đón, điểm đến, ngày giờ và loại xe.</p></div><div class="step"><div class="num">2</div><h3>Nhận báo giá</h3><p>Nhân viên kiểm tra lịch trình và xác nhận giá.</p></div><div class="step"><div class="num">3</div><h3>Chốt xe</h3><p>Xác nhận thông tin và thời gian đón khách.</p></div><div class="step"><div class="num">4</div><h3>Đón khách</h3><p>Tài xế chủ động liên hệ và phục vụ đúng lịch.</p></div></div></div></section>
+<section class="why"><div class="why-photo"></div><div class="why-copy"><h2>VÌ SAO CHỌN NHÀ XE GIA BẢO?</h2><ul><li>Xe sạch sẽ, tiện nghi và được kiểm tra định kỳ.</li><li>Tài xế lịch sự, chủ động liên hệ trước giờ đón.</li><li>Báo giá rõ ràng theo lịch trình, hạn chế phát sinh.</li><li>Phục vụ 24/7, hỗ trợ nhanh khi khách cần.</li><li>Có nhiều loại xe cho gia đình, công ty và đoàn.</li><li>Nhận các tuyến Bình Dương, TP.HCM và miền Nam.</li></ul><div class="actions"><a class="pill-btn" href="tel:0342127750">☎ 0342 127 750</a><a class="pill-btn" style="background:#0878e8" href="https://zalo.me/0342127750">Zalo - Đặt xe</a></div></div></section>
+<section class="section alt"><div class="container"><div class="section-title"><div class="eyebrow">CÂU HỎI THƯỜNG GẶP</div><h2>Khách hàng thường hỏi</h2></div><div class="faq"><details><summary>Nhà xe có cho thuê xe tự lái không?</summary><p>Dịch vụ trên website tập trung vào xe có tài xế.</p></details><details><summary>Có nhận đón tại nhà không?</summary><p>Có thể tư vấn điểm đón cụ thể theo lịch trình của khách.</p></details><details><summary>Giá trên website có phải giá cuối cùng không?</summary><p>Giá hiển thị là giá tham khảo theo tuyến. Nhân viên sẽ xác nhận lại lịch trình và báo giá trước khi chốt.</p></details><details><summary>Có nhận hợp đồng cho công ty và đoàn không?</summary><p>Có thể tư vấn xe và lịch trình theo nhu cầu doanh nghiệp, đoàn khách.</p></details></div></div></section>
+
+<footer>
+<style>
+.footer-inner{max-width:1300px;margin:auto;padding:42px 18px 0;display:grid;grid-template-columns:1.15fr 1fr 1fr 1.15fr;gap:30px;color:#fff}
+.footer-col h3,.footer-brand h3{margin:0 0 14px;font-size:20px;color:#fff}
+.footer-col h3:after,.footer-brand h3:after{content:"";display:block;width:42px;height:3px;background:#8aa7c9;margin-top:10px}
+.footer-col p,.footer-brand p{margin:9px 0;line-height:1.6}
+.footer-col a{color:#fff;text-decoration:none}
+.footer-col a:hover{text-decoration:underline}
+.footer-brand img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid #fff;background:#fff;margin-bottom:10px}
+.footer-map-title{font-weight:700;margin:18px 0 8px}
+.footer-map{width:100%;height:150px;border:0;border-radius:10px;display:block}
+.footer-thanks{grid-column:1/-1;margin-top:25px;background:#fff;color:#0b2f5b;overflow:hidden;border-radius:8px 8px 0 0;height:48px;display:flex;align-items:center}
+.footer-thanks-track{white-space:nowrap;display:inline-block;padding-left:100%;font-size:18px;font-weight:700;animation:footerMarquee 18s linear infinite}
+@keyframes footerMarquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.footer-copy{grid-column:1/-1;text-align:center;padding:16px 0 20px;border-top:1px solid rgba(255,255,255,.18);font-size:14px}
+@media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr}.footer-thanks,.footer-copy{grid-column:1/-1}}
+@media(max-width:600px){.footer-inner{grid-template-columns:1fr;padding-top:30px}.footer-thanks,.footer-copy{grid-column:1}.footer-thanks{height:44px}.footer-thanks-track{font-size:15px}}
+</style>
+<div class="footer-inner">
+  <div class="footer-brand">
+    <img src="./logo.jpg" alt="Nhà Xe Gia Bảo">
+    <h3>NHÀ XE GIA BẢO</h3>
+    <p>AN TOÀN - UY TÍN - CHUYÊN NGHIỆP</p>
+    <p>Mọi hành trình - Vạn niềm tin</p>
+    <p>📍 Thuận An, Bình Dương</p>
+    <p>☎ <a href="tel:0342127750">0342 127 750</a></p>
+    <p>💬 <a href="https://zalo.me/0342127750">Zalo: 0342 127 750</a></p>
+  </div>
+
+  <div class="footer-col">
+    <h3>DỊCH VỤ CHO THUÊ XE</h3>
+    <p>Xe 4 chỗ có lái</p>
+    <p>Xe 7 chỗ có lái</p>
+    <p>Xe 16 chỗ có lái</p>
+    <p>Xe 29 chỗ có lái</p>
+    <p>Đưa đón sân bay</p>
+    <p>Du lịch • Đi tỉnh • Hợp đồng</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>TUYẾN PHỔ BIẾN</h3>
+    <p><a href="tuyen-xe.html">Bình Dương → TP.HCM</a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Vũng Tàu</a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Phan Thiết</a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Đà Lạt</a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Nha Trang</a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Cần Thơ </a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Tây Ninh /a></p>
+    <p><a href="tuyen-xe.html">Bình Dương → Long An</a></p>
+  </div>
+
+  <div class="footer-col">
+    <h3>ĐẶT XE NHANH</h3>
+    <p>Phục vụ 24/7 tại Bình Dương, TP.HCM và các tỉnh miền Nam.</p>
+    <p><a href="tel:0342127750">☎ Gọi ngay: 0342 127 750</a></p>
+    <p><a href="https://zalo.me/0342127750">💬 Nhắn Zalo đặt xe</a></p>
+    <div class="footer-map-title">📍 Vị trí Nhà Xe Gia Bảo</div>
+    <iframe class="footer-map"
+      src="https://www.google.com/maps?q=Thu%E1%BA%ADn%20An%2C%20B%C3%ACnh%20D%C6%B0%C6%A1ng&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Google Maps - Nhà Xe Gia Bảo, Thuận An, Bình Dương"></iframe>
+  </div>
+
+  <div class="footer-thanks">
+    <div class="footer-thanks-track">Cảm ơn quý khách đã lựa chọn và tin tưởng dịch vụ của Nhà Xe Gia Bảo! • Kính chúc quý khách thượng lộ bình an và có những hành trình vui vẻ!</div>
+  </div>
+
+  <div class="footer-copy">© 2026 Nhà Xe Gia Bảo. Tất cả quyền được bảo vệ.</div>
+</div>
+</footer>
+
+<style>
+/* 6 nút liên hệ nổi */
+.floating{
+  position:fixed;
+  right:18px;
+  bottom:24px;
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+}
+.floating .float{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-decoration:none;
+  color:#fff;
+  font-weight:800;
+  box-shadow:0 4px 14px rgba(0,0,0,.22);
+  border:3px solid rgba(255,255,255,.9);
+  transition:transform .2s, box-shadow .2s;
+  line-height:1;
+}
+.floating .float:hover{
+  transform:scale(1.08);
+  box-shadow:0 6px 18px rgba(0,0,0,.28);
+}
+.floating .app-icon{
+  width:27px;
+  height:27px;
+  display:block;
+  fill:currentColor;
+}
+.floating .float small{
+  font-size:8px;
+  margin-top:3px;
+  font-weight:800;
+}
+.floating .fcall{background:#e91b23;}
+.floating .fzalo{background:#0878e8;}
+.floating .fbook{background:#08a95b;}
+.floating .ffacebook{background:#1877f2;}
+.floating .fmessenger{background:#0084ff;}
+.floating .ftelegram{background:#229ed9;}
+@media(max-width:600px){
+  .floating{right:10px;bottom:14px;gap:7px;}
+  .floating .float{width:50px;height:50px;}
+  .floating .app-icon{width:23px;height:23px;}
+  .floating .float small{font-size:7px;}
+}
 </style>
 
-</head>
-<body>
-
-<!-- NÚT LIÊN HỆ NỔI - BIỂU TƯỢNG CHUẨN -->
-<div class="fixed-contact-bar">
-    <a href="https://www.facebook.com/thuexebinhduong24h" target="_blank" class="contact-btn btn-fb" title="Facebook">
-        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.022 1.792-4.688 4.533-4.688 1.313 0 2.687.235 2.687.235v2.955h-1.518c-1.494 0-1.962.932-1.962 1.884v2.256h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z"/>
-        </svg>
-    </a>
-    <a href="https://m.me/417943681413040" target="_blank" class="contact-btn btn-mess" title="Messenger">
-        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-            <path d="M12 0c-6.627 0-12 4.975-12 11.111 0 3.497 1.745 6.614 4.472 8.654v4.235l4.088-2.242c1.092.301 2.246.462 3.44.462 6.627 0 12-4.974 12-11.11 0-6.136-5.373-11.111-12-11.111zm1.19 14.963l-3.055-3.258-5.963 3.258 6.568-6.963 3.055 3.259 5.963-3.259-6.568 6.963z"/>
-        </svg>
-    </a>
-    <a href="https://t.me/xemocbai12" target="_blank" class="contact-btn btn-tg" title="Telegram">
-        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .134.356c.016.095.036.244.02.372-.168 1.864-.956 6.378-1.352 8.462-.167.876-.496 1.17-.812 1.198-.692.062-1.216-.452-1.882-.886-1.044-.68-1.632-1.102-2.632-1.766-1.168-.77-.41-1.198.254-1.886.174-.179 3.138-2.88 3.196-3.188a.246.246 0 0 0-.06-.216c-.044-.042-.106-.063-.246-.063-.145 0-.304.033-.478.117-.288.144-2.148 1.398-2.148 1.398-.242.166-.486.344-.72.52-.234.178-.46.354-.67.514-.21.16-.402.304-.57.424-.168.12-.312.214-.42.274-.108.06-.18.084-.236.084a.24.24 0 0 1-.142-.046c-.056-.042-.134-.124-.134-.264 0-.078.036-.156.072-.234.144-.312.468-.912.816-1.558.348-.646.72-1.33 1.02-1.854.3-.524.528-.88.69-1.074.162-.194.252-.24.252-.24z"/>
-        </svg>
-    </a>
-    <a href="https://zalo.me/0342127750" target="_blank" class="contact-btn btn-zalo" title="Zalo">
-        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-            <path d="M12.017 10.083c-.683 0-1.275.207-1.775.622-.5.414-.775.986-.825 1.716 0 .73.258 1.301.775 1.716.517.415 1.108.622 1.775.622.667 0 1.258-.207 1.775-.622.517-.415.775-.986.775-1.716 0-.716-.258-1.284-.775-1.703-.517-.418-1.108-.635-1.775-.635zm7.042-7.083H4.941C3.318 3 2 4.318 2 5.941v14.118C2 21.682 3.318 23 4.941 23h14.118C20.682 23 22 21.682 22 20.059V5.941C22 4.318 20.682 3 19.059 3zm-3.108 10.95c-.192.375-.408.68-.65.915-.242.235-.579.45-1.01.645-.432.195-.942.345-1.53.45-.588.105-1.215.157-1.882.157-.99 0-1.872-.09-2.647-.27-.775-.18-1.438-.45-1.99-.81-.552-.36-.98-.78-1.287-1.26-.306-.48-.46-1.005-.46-1.575 0-.585.168-1.11.505-1.575.338-.465.747-.855 1.227-1.17.48-.315 1.038-.555 1.672-.72.635-.165 1.31-.247 2.025-.247.765 0 1.455.09 2.07.27.615.18 1.14.42 1.575.72.435.3.773.645 1.012 1.035.24.39.36.795.36 1.215 0 .435-.097.84-.29 1.215-.192.375-.408.68-.65.915.037.045.072.09.105.135.033.045.063.09.09.135.027.045.051.09.072.135.021.045.039.09.054.135.015.045.024.09.027.135.003.045.003.09-.003.135-.006.045-.018.09-.036.135-.018.045-.042.09-.072.135-.03.045-.066.09-.108.135-.042.045-.09.09-.144.135-.054.045-.114.09-.18.135-.066.045-.138.09-.216.135-.078.045-.162.09-.252.135-.09.045-.192.09-.306.135-.114.045-.24.09-.378.135-.138.045-.288.09-.45.135-.162.045-.336.09-.522.135-.186.045-.384.09-.594.135-.21.045-.432.09-.666.135-.234.045-.48.09-.738.135-.258.045-.528.09-.81.135-.282.045-.576.09-.882.135-.306.045-.624.09-.954.135-.33.045-.672.09-1.026.135-.354.045-.72.09-1.098.135-.378.045-.768.09-1.17.135-.402.045-.816.09-1.242.135-.426.045-.864.09-1.314.135-.45.045-.912.09-1.386.135-.474.045-.96.09-1.458.135-.498.045-1.008.09-1.53.135-.522.045-1.056.09-1.602.135-.546.045-1.104.09-1.674.135-.57.045-1.152.09-1.746.135-.594.045-1.2.09-1.818.135-.618.045-1.248.09-1.89.135-.642.045-1.296.09-1.962.135-.666.045-1.344.09-2.034.135-.69.045-1.392.09-2.106.135-.714.045-1.44.09-2.178.135-.738.045-1.488.09-2.25.135-.762.045-1.536.09-2.322.135-.786.045-1.584.09-2.394.135-.81.045-1.632.09-2.466.135-.834.045-1.68.09-2.538.135-.858.045-1.728.09-2.61.135-.882.045-1.776.09-2.682.135-.906.045-1.824.09-2.754.135-.93.045-1.872.09-2.826.135-.954.045-1.92.09-2.898.135-.978.045-1.968.09-2.97.135-1.002.045-2.016.09-3.042.135-1.026.045-2.064.09-3.114.135-1.05.045-2.112.09-3.177.135-1.065.045-2.142.09-3.222.135-1.08.045-2.178.09-3.276.135-1.098.045-2.214.09-3.33.135-1.116.045-2.25.09-3.384.135-1.134.045-2.286.09-3.438.135-1.152.045-2.322.09-3.492.135-1.17.045-2.358.09-3.546.135-1.188.045-2.394.09-3.6.135-1.206.045-2.43.09-3.654.135-1.224.045-2.466.09-3.708.135-1.242.045-2.502.09-3.762.135-1.26.045-2.538.09-3.816.135-1.278.045-2.574.09-3.87.135-1.296.045-2.61.09-3.924.135-1.314.045-2.646.09-3.978.135-1.332.045-2.682.09-4.032.135-1.35.045-2.718.09-4.086.135-1.368.045-2.754.09-4.14.135-1.386.045-2.79.09-4.194.135-1.404.045-2.826.09-4.248.135-1.422.045-2.862.09-4.302.135-1.44.045-2.898.09-4.356.135-1.458.045-2.934.09-4.41.135-1.476.045-2.97.09-4.464.135-1.494.045-3.006.09-4.518.135-1.512.045-3.042.09-4.572.135-1.53.045-3.078.09-4.626.135-1.548.045-3.114.09-4.68.135-1.566.045-3.15.09-4.734.135-1.584.045-3.186.09-4.788.135-1.602.045-3.222.09-4.842.135-1.62.045-3.258.09-4.896.135-1.638.045-3.294.09-4.95.135-1.656.045-3.33.09-5.004.135-1.674.045-3.366.09-5.058.135-1.692.045-3.402.09-5.112.135-1.71.045-3.438.09-5.166.135-1.728.045-3.474.09-5.22.135-1.746.045-3.51.09-5.274.135-1.764.045-3.546.09-5.328.135-1.782.045-3.582.09-5.382.135-1.8.045-3.618.09-5.436.135-1.818.045-3.654.09-5.49.135-1.836.045-3.69.09-5.544.135-1.854.045-3.726.09-5.598.135-1.872.045-3.762.09-5.652.135-1.89.045-3.798.09-5.706.135-1.908.045-3.834.09-5.76.135-1.926.045-3.87.09-5.814.135-1.944.045-3.906.09-5.868.135-1.962.045-3.942.09-5.922.135-1.98.045-3.978.09-5.976.135-1.998.045-4.014.09-6.03.135-2.016.045-4.05.09-6.084.135-2.034.045-4.086.09-6.138.135-2.052.045-4.122.09-6.192.135-2.07.045-4.158.09-6.246.135-2.088.045-4.194.09-6.3.135-2.106.045-4.23.09-6.354.135-2.124.045-4.266.09-6.408.135-2.142.045-4.302.09-6.462.135-2.16.045-4.338.09-6.516.135-2.178.045-4.374.09-6.57.135-2.196.045-4.41.09-6.624.135-2.214.045-4.446.09-6.678.135-2.232.045-4.482.09-6.732.135-2.25.045-4.518.09-6.786.135-2.268.045-4.554.09-6.84.135-2.286.045-4.59.09-6.894.135-2.304.045-4.626.09-6.948.135-2.322.045-4.662.09-7.002.135-2.34.045-4.698.09-7.056.135-2.358.045-4.734.09-7.11.135-2.376.045-4.77.09-7.164.135-2.394.045-4.806.09-7.218.135-2.412.045-4.842.09-7.272.135-2.43.045-4.878.09-7.326.135-2.448.045-4.914.09-7.38.135-2.466.045-4.95.09-7.434.135-2.484.045-4.986.09-7.488.135-2.502.045-5.022.09-7.542.135-2.52.045-5.058.09-7.596.135-2.538.045-5.094.09-7.65.135-2.556.045-5.13.09-7.704.135-2.574.045-5.166.09-7.758.135-2.592.045-5.202.09-7.812.135-2.61.045-5.238.09-7.866.135-2.628.045-5.274.09-7.92.135-2.646.045-5.31.09-7.974.135-2.664.045-5.346.09-8.028.135-2.682.045-5.382.09-8.082.135-2.7.045-5.418.09-8.136.135-2.718.045-5.454.09-8.19.135-2.736.045-5.49.09-8.244.135-2.754.045-5.526.09-8.298.135-2.772.045-5.562.09-8.352.135-2.79.045-5.598.09-8.406.135-2.808.045-5.634.09-8.46.135-2.826.045-5.67.09-8.514.135-2.844.045-5.706.09-8.568.135-2.862.045-5.742.09-8.622.135-2.88.045-5.778.09-8.676.135-2.898.045-5.814.09-8.73.135-2.916.045-5.85.09-8.784.135-2.934.045-5.886.09-8.838.135-2.952.045-5.922.09-8.892.135-2.97.045-5.958.09-8.946.135-2.988.045-5.994.09-9.0.135-3.006.045-6.03.09-9.054.135-3.024.045-6.066.09-9.108.135-3.042.045-6.102.09-9.162.135-3.06.045-6.138.09-9.216.135-3.078.045-6.174.09-9.27.135-3.096.045-6.21.09-9.324.135-3.114.045-6.246.09-9.378.135-3.132.045-6.282.09-9.432.135-3.15.045-6.318.09-9.486.135-3.168.045-6.354.09-9.54.135-3.186.045-6.39.09-9.594.135-3.204.045-6.426.09-9.648.135-3.222.045-6.462.09-9.702.135-3.24.045-6.498.09-9.756.135-3.258.045-6.534.09-9.81.135-3.276.045-6.57.09-9.864.135-3.294.045-6.606.09-9.918.135-3.312.045-6.642.09-9.972.135-3.33.045-6.678.09-10.026.135-3.348.045-6.714.09-10.08.135-3.366.045-6.75.09-10.134.135-3.384.045-6.786.09-10.188.135-3.402.045-6.822.09-10.242.135-3.42.045-6.858.09-10.296.135-3.438.045-6.894.09-10.35.135-3.456.045-6.93.09-10.404.135-3.474.045-6.966.09-10.458.135-3.492.045-7.002.09-10.512.135-3.51.045-7.038.09-10.566.135-3.528.045-7.074.09-10.62.135-3.546.045-7.11.09-10.674.135-3.564.045-7.146.09-10.728.135-3.582.045-7.182.09-10.782.135-3.6.045-7.218.09-10.836.135-3.618.045-7.254.09-10.89.135-3.636.045-7.29.09-10.944.135-3.654.045-7.326.09-10.998.135-3.672.045-7.362.09-11.052.135-3.69.045-7.398.09-11.106.135-3.708.045-7.434.09-11.16.135-3.726.045-7.47.09-11.214.135-3.744.045-7.506.09-11.268.135-3.762.045-7.542.09-11.322.135-3.78.045-7.578.09-11.376.135-3.798.045-7.614.09-11.43.135-3.816.045-7.65.09-11.484.135-3.834.045-7.686.09-11.538.135-3.852.045-7.722.09-11.592.135-3.87.045-7.758.09-11.646.135-3.888.045-7.794.09-11.7.135-3.906.045-7.83.09-11.754.135-3.924.045-7.866.09-11.808.135-3.942.045-7.902.09-11.862.135-3.96.045-7.938.09-11.916.135-3.978.045-7.974.09-11.97.135-3.996.045-8.01.09-12.024.135-4.014.045-8.046.09-12.078.135-4.032.045-8.082.09-12.132.135-4.05.045-8.118.09-12.186.135-4.068.045-8.154.09-12.24.135-4.086.045-8.19.09-12.294.135-4.104.045-8.226.09-12.348.135-4.122.045-8.262.09-12.402.135-4.14.045-8.298.09-12.456.135-4.158.045-8.334.09-12.51.135-4.176.045-8.37.09-12.564.135-4.194.045-8.406.09-12.618.135-4.212.045-8.442.09-12.672.135-4.23.045-8.478.09-12.726.135-4.248.045-8.514.09-12.78.135-4.266.045-8.55.09-12.834.135-4.284.045-8.586.09-12.888.135-4.302.045-8.622.09-12.942.135-4.32.045-8.658.09-12.996.135-4.338.045-8.694.09-13.05.135-4.356.045-8.73.09-13.104.135-4.374.045-8.766.09-13.158.135-4.392.045-8.802.09-13.212.135-4.41.045-8.838.09-13.266.135-4.428.045-8.874.09-13.32.135-4.446.045-8.91.09-13.374.135-4.464.045-8.946.09-13.428.135-4.482.045-8.982.09-13.482.135-4.5.045-9.018.09-13.536.135-4.518.045-9.054.09-13.59.135-4.536.045-9.09.09-13.644.135-4.554.045-9.126.09-13.698.135-4.572.045-9.162.09-13.752.135-4.59.045-9.198.09-13.806.135-4.608.045-9.234.09-13.86.135-4.626.045-9.27.09-13.914.135-4.644.045-9.306.09-13.968.135-4.662.045-9.342.09-14.022.135-4.68.045-9.378.09-14.076.135-4.698.045-9.414.09-14.13.135-4.716.045-9.45.09-14.184.135-4.734.045-9.486.09-14.238.135-4.752.045-9.522.09-14.292.135-4.77.045-9.558.09-14.346.135-4.788.045-9.594.09-14.4.135-4.806.045-9.63.09-14.454.135-4.824.045-9.666.09-14.508.135-4.842.045-9.702.09-14.562.135-4.86.045-9.738.09-14.616.135-4.878.045-9.774.09-14.67.135-4.896.045-9.81.09-14.724.135-4.914.045-9.846.09-14.778.135-4.932.045-9.882.09-14.832.135-4.95.045-9.918.09-14.886.135-4.968.045-9.954.09-14.94.135-4.986.045-9.99.09-14.994.135-5.004.045-10.026.09-15.048.135-5.022.045-10.062.09-15.102.135-5.04.045-10.098.09-15.156.135-5.058.045-10.134.09-15.21.135-5.076.045-10.17.09-15.264.135-5.094.045-10.206.09-15.318.135-5.112.045-10.242.09-15.372.135-5.13.045-10.278.09-15.426.135-5.148.045-10.314.09-15.48.135-5.166.045-10.35.09-15.534.135-5.184.045-10.386.09-15.588.135-5.202.045-10.422.09-15.642.135-5.22.045-10.458.09-15.696.135-5.238.045-10.494.09-15.75.135-5.256.045-10.53.09-15.804.135-5.274.045-10.566.09-15.858.135-5.292.045-10.602.09-15.912.135-5.31.045-10.638.09-15.966.135-5.328.045-10.674.09-16.02.135-5.346.045-10.71.09-16.074.135-5.364.045-10.746.09-16.128.135-5.382.045-10.782.09-16.182.135-5.4.045-10.818.09-16.236.135-5.418.045-10.854.09-16.29.135-5.436.045-10.89.09-16.344.13
+<div class="floating">
+  <a class="float fcall" href="tel:0342127750" aria-label="Gọi 0342 127 750" title="Gọi 0342 127 750">
+    <span class="call-icon">☎</span><small>Gọi</small>
+  </a>
+  <a class="float fzalo" href="https://zalo.me/0342127750" target="_blank" rel="noopener" aria-label="Zalo" title="Chat Zalo">
+    <span class="zalo-icon">Zalo</span><small>Chat Zalo</small>
+  </a>
+  <a class="float fbook" href="index.html#bao-gia" aria-label="Đặt xe" title="Đặt xe">
+    <span class="car-icon">🚗</span><small>Đặt xe</small>
+  </a>
+  <a class="float ffacebook" href="https://www.facebook.com/thuexebinhduong24h" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+    <span class="fb-icon">f</span><small>Facebook</small>
+  </a>
+  <a class="float fmessenger" href="https://m.me/417943681413040" target="_blank" rel="noopener" aria-label="Messenger" title="Messenger">
+    <span class="msg-icon">➤</span><small>Messenger</small>
+  </a>
+  <a class="float ftelegram" href="https://telegram.me/xemocbai12" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
+    <span class="tg-icon">➤</span><small>Telegram</small>
+  </a>
+</div>
+<script src="script.js"></script></body></html>
