@@ -312,6 +312,27 @@ footer{
 .footer-copy{grid-column:1/-1;text-align:center;padding:16px 0 20px;border-top:1px solid rgba(255,255,255,.18);font-size:14px}
 @media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr}.footer-thanks,.footer-copy{grid-column:1/-1}}
 @media(max-width:600px){.footer-inner{grid-template-columns:1fr;padding-top:30px}.footer-thanks,.footer-copy{grid-column:1}.footer-thanks{height:44px}.footer-thanks-track{font-size:15px}}
+
+/* Chỉ hiển thị biểu tượng nút nổi - ẩn chữ bên cạnh */
+.floating .float small{
+  display:none!important;
+}
+.floating .float{
+  width:58px!important;
+  min-width:58px!important;
+  height:58px!important;
+  gap:0!important;
+}
+.floating .float>span{
+  margin:0!important;
+}
+@media(max-width:600px){
+  .floating .float{
+    width:50px!important;
+    min-width:50px!important;
+    height:50px!important;
+  }
+}
 </style>
 <div class="footer-inner">
   <div class="footer-brand">
