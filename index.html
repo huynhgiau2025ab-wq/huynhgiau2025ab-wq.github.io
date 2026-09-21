@@ -65,35 +65,162 @@ footer{
 </style>
 
 
-<style>
+
+<style id="professional-floating-buttons">
 .floating{
- position:fixed!important;right:18px!important;bottom:24px!important;z-index:99999!important;
- display:flex!important;flex-direction:column!important;gap:10px!important;align-items:center!important;
+  position:fixed!important;
+  right:14px!important;
+  top:50%!important;
+  bottom:auto!important;
+  transform:translateY(-50%)!important;
+  z-index:99999!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:12px!important;
+  align-items:flex-end!important;
 }
 .floating .float{
- width:58px!important;height:58px!important;border-radius:50%!important;
- display:flex!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;
- text-decoration:none!important;color:#fff!important;font-weight:800!important;
- box-shadow:0 4px 14px rgba(0,0,0,.25)!important;border:3px solid #fff!important;
- box-sizing:border-box!important;line-height:1!important;
+  position:relative!important;
+  width:auto!important;
+  height:58px!important;
+  min-width:58px!important;
+  padding:0 0 0 14px!important;
+  border:0!important;
+  border-radius:32px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:9px!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  line-height:1!important;
+  transition:transform .2s ease!important;
 }
-.floating .float small{font-size:8px!important;margin-top:3px!important;font-weight:800!important;}
-.fcall{background:#e91b23!important}.fzalo{background:#0878e8!important}
-.fbook{background:#08a95b!important}.ffacebook{background:#1877f2!important}
-.fmessenger{background:#0084ff!important}.ftelegram{background:#229ed9!important}
-.call-icon{font-size:28px!important;line-height:25px!important}
-.zalo-icon{font-size:14px!important;font-weight:900!important}
-.car-icon{font-size:24px!important;line-height:25px!important}
-.fb-icon{font-size:31px!important;font-family:Arial,sans-serif!important}
-.msg-icon,.tg-icon{font-size:25px!important;line-height:25px!important}
+.floating .float:hover{
+  transform:translateX(-3px) scale(1.02)!important;
+}
+.floating .float small{
+  order:1!important;
+  display:block!important;
+  background:linear-gradient(180deg,#444,#242424)!important;
+  color:#fff!important;
+  padding:9px 13px!important;
+  border-radius:18px!important;
+  font-size:13px!important;
+  font-weight:800!important;
+  white-space:nowrap!important;
+  box-shadow:0 3px 9px rgba(0,0,0,.28)!important;
+}
+.floating .float > span{
+  order:2!important;
+  width:58px!important;
+  height:58px!important;
+  flex:0 0 58px!important;
+  border-radius:50%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  color:#fff!important;
+  box-shadow:0 3px 10px rgba(0,0,0,.25), inset 0 0 0 3px rgba(255,255,255,.75)!important;
+  box-sizing:border-box!important;
+}
+.fcall > span{background:#ef151c!important;}
+.fzalo > span{background:#0878e8!important;}
+.fbook > span{background:#09a85b!important;}
+.ffacebook > span{background:#1877f2!important;}
+.fmessenger > span{background:#0084ff!important;}
+.ftelegram > span{background:#229ed9!important;}
+
+.call-icon{font-size:29px!important;line-height:1!important;font-family:Arial,sans-serif!important;}
+.zalo-icon{font-size:13px!important;font-weight:900!important;letter-spacing:-.5px!important;}
+.car-icon{font-size:25px!important;line-height:1!important;}
+.fb-icon{font-size:34px!important;font-family:Arial,sans-serif!important;font-weight:900!important;}
+.msg-icon,.tg-icon{font-size:25px!important;font-weight:900!important;line-height:1!important;}
+
 @media(max-width:600px){
- .floating{right:10px!important;bottom:14px!important;gap:7px!important}
- .floating .float{width:50px!important;height:50px!important}
- .call-icon{font-size:24px!important}.car-icon{font-size:21px!important}.fb-icon{font-size:27px!important}
- .msg-icon,.tg-icon{font-size:22px!important}.zalo-icon{font-size:12px!important}
- .floating .float small{font-size:7px!important}
+  .floating{
+    right:8px!important;
+    gap:8px!important;
+  }
+  .floating .float{
+    height:50px!important;
+    min-width:50px!important;
+    padding-left:7px!important;
+    gap:6px!important;
+  }
+  .floating .float > span{
+    width:50px!important;
+    height:50px!important;
+    flex-basis:50px!important;
+  }
+  .floating .float small{
+    padding:7px 9px!important;
+    font-size:10px!important;
+  }
+  .call-icon{font-size:24px!important;}
+  .fb-icon{font-size:29px!important;}
+  .car-icon{font-size:21px!important;}
+  .msg-icon,.tg-icon{font-size:21px!important;}
+  .zalo-icon{font-size:11px!important;}
 }
 </style>
+
+
+<style id="zalo-telegram-professional-icons">
+.floating .zalo-logo,
+.floating .telegram-logo{
+  width:58px!important;
+  height:58px!important;
+  flex:0 0 58px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:50%!important;
+  box-sizing:border-box!important;
+}
+.floating .zalo-logo svg{
+  width:58px!important;
+  height:58px!important;
+  display:block!important;
+}
+.floating .zalo-logo svg path{
+  fill:#fff!important;
+}
+.floating .zalo-logo svg text{
+  fill:#0878e8!important;
+  font-family:Arial,sans-serif!important;
+  font-size:13px!important;
+  font-weight:900!important;
+}
+.floating .telegram-logo svg{
+  width:58px!important;
+  height:58px!important;
+  display:block!important;
+}
+.floating .telegram-logo svg circle{
+  fill:#229ed9!important;
+}
+.floating .telegram-logo svg path{
+  fill:#fff!important;
+}
+@media(max-width:600px){
+  .floating .zalo-logo,
+  .floating .telegram-logo{
+    width:50px!important;
+    height:50px!important;
+    flex-basis:50px!important;
+  }
+  .floating .zalo-logo svg,
+  .floating .telegram-logo svg{
+    width:50px!important;
+    height:50px!important;
+  }
+}
+</style>
+
 </head><body>
 
 <header class="top" id="top"><div class="head container"><a class="brand" href="index.html"><img src="./logo.jpg" alt="Nhà Xe Gia Bảo"><div><div class="brand-title">NHÀ XE <span>GIA BẢO</span></div><div class="brand-sub">AN TOÀN - UY TÍN - CHUYÊN NGHIỆP</div><div class="slogan">Mọi hành trình - Vạn niềm tin</div></div></a><div class="head-info"><a class="head-chip red" href="tel:0342127750">☎ 0342 127 750</a><a class="head-chip blue" href="https://zalo.me/0342127750">Zalo</a><span class="head-chip">📍 Thuận An, Bình Dương</span><span class="head-chip">⏰ 24/7</span></div></div><nav class="nav"><a class="active" href="index.html">Trang chủ</a><a class="" href="gioi-thieu.html">Giới thiệu</a><a class="" href="dich-vu.html">Dịch vụ</a><a class="" href="bang-gia.html">Bảng giá</a><a class="" href="tuyen-xe.html">Tuyến xe</a><a class="" href="doi-xe.html">Đội xe</a><a class="" href="lien-he.html">Liên hệ</a></nav></header>
@@ -216,81 +343,34 @@ footer{
 </div>
 </footer>
 
-<style>
-/* 6 nút liên hệ nổi */
-.floating{
-  position:fixed;
-  right:18px;
-  bottom:24px;
-  z-index:9999;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  align-items:center;
-}
-.floating .float{
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  text-decoration:none;
-  color:#fff;
-  font-weight:800;
-  box-shadow:0 4px 14px rgba(0,0,0,.22);
-  border:3px solid rgba(255,255,255,.9);
-  transition:transform .2s, box-shadow .2s;
-  line-height:1;
-}
-.floating .float:hover{
-  transform:scale(1.08);
-  box-shadow:0 6px 18px rgba(0,0,0,.28);
-}
-.floating .app-icon{
-  width:27px;
-  height:27px;
-  display:block;
-  fill:currentColor;
-}
-.floating .float small{
-  font-size:8px;
-  margin-top:3px;
-  font-weight:800;
-}
-.floating .fcall{background:#e91b23;}
-.floating .fzalo{background:#0878e8;}
-.floating .fbook{background:#08a95b;}
-.floating .ffacebook{background:#1877f2;}
-.floating .fmessenger{background:#0084ff;}
-.floating .ftelegram{background:#229ed9;}
-@media(max-width:600px){
-  .floating{right:10px;bottom:14px;gap:7px;}
-  .floating .float{width:50px;height:50px;}
-  .floating .app-icon{width:23px;height:23px;}
-  .floating .float small{font-size:7px;}
-}
-</style>
-
 <div class="floating">
-  <a class="float fcall" href="tel:0342127750" aria-label="Gọi 0342 127 750" title="Gọi 0342 127 750">
-    <span class="call-icon">☎</span><small>Gọi</small>
+  <a class="float fcall" href="tel:0342127750" aria-label="Gọi 0342 127 750" title="Gọi ngay">
+    <small>Gọi ngay</small><span class="call-icon">☎</span>
   </a>
   <a class="float fzalo" href="https://zalo.me/0342127750" target="_blank" rel="noopener" aria-label="Zalo" title="Chat Zalo">
-    <span class="zalo-icon">Zalo</span><small>Chat Zalo</small>
+    <small>Zalo</small><span class="zalo-logo" aria-hidden="true">
+  <svg viewBox="0 0 64 64">
+    <path d="M32 7C18.2 7 7 17.3 7 30c0 8.2 4.8 15.3 12.1 19.2L17 57l9.5-5.3c1.8.4 3.6.6 5.5.6 13.8 0 25-10.3 25-23S45.8 7 32 7Z"/>
+    <text x="32" y="39" text-anchor="middle">Zalo</text>
+  </svg>
+</span>
   </a>
   <a class="float fbook" href="index.html#bao-gia" aria-label="Đặt xe" title="Đặt xe">
-    <span class="car-icon">🚗</span><small>Đặt xe</small>
+    <small>Đặt xe</small><span class="car-icon">🚗</span>
   </a>
   <a class="float ffacebook" href="https://www.facebook.com/thuexebinhduong24h" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-    <span class="fb-icon">f</span><small>Facebook</small>
+    <small>Facebook</small><span class="fb-icon">f</span>
   </a>
   <a class="float fmessenger" href="https://m.me/417943681413040" target="_blank" rel="noopener" aria-label="Messenger" title="Messenger">
-    <span class="msg-icon">➤</span><small>Messenger</small>
+    <small>Messenger</small><span class="msg-icon">➤</span>
   </a>
   <a class="float ftelegram" href="https://telegram.me/xemocbai12" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
-    <span class="tg-icon">➤</span><small>Telegram</small>
+    <small>Telegram</small><span class="telegram-logo" aria-hidden="true">
+  <svg viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="30"/>
+    <path d="M15 31.2 48.5 18c1.6-.6 3 .4 2.5 2.2L43.8 46c-.4 1.8-1.5 2.3-3 1.4l-9.5-7-4.6 4.4c-.5.5-.9.9-1.8.9l.7-9.7 17.7-14.9c.8-.7-.2-1.1-1.1-.5L20.3 33.2l-8.4-2.7c-1.8-.6-1.8-1.8.4-2.7Z"/>
+  </svg>
+</span>
   </a>
 </div>
 <script src="script.js"></script></body></html>
