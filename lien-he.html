@@ -1,146 +1,204 @@
-<!doctype html>
-<html lang="vi">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Liên hệ | Nhà Xe Gia Bảo</title>
-<meta name="description" content="Liên hệ Nhà Xe Gia Bảo để đặt xe 4 chỗ, 7 chỗ, 16 chỗ, 29 chỗ có lái.">
+<!-- NÚT LIÊN HỆ NỔI -->
+<div class="floating">
+
+  <!-- Gọi điện -->
+  <a class="float-btn fcall"
+     href="tel:0342127750"
+     aria-label="Gọi điện">
+    <span>☎</span>
+  </a>
+
+  <!-- Zalo -->
+  <a class="float-btn fzalo"
+     href="https://zalo.me/0342127750"
+     target="_blank"
+     rel="noopener"
+     aria-label="Zalo">
+    <span class="zalo-text">Zalo</span>
+  </a>
+
+  <!-- Đặt xe -->
+  <a class="float-btn fbook"
+     href="#bookingForm"
+     aria-label="Đặt xe">
+    <span>🚗</span>
+  </a>
+
+  <!-- Facebook -->
+  <a class="float-btn ffacebook"
+     href="https://www.facebook.com/thuexebinhduong24h"
+     target="_blank"
+     rel="noopener"
+     aria-label="Facebook">
+    <span class="fb-icon">f</span>
+  </a>
+
+  <!-- Messenger -->
+  <a class="float-btn fmessenger"
+     href="https://m.me/417943681413040"
+     target="_blank"
+     rel="noopener"
+     aria-label="Messenger">
+    <span>➤</span>
+  </a>
+
+  <!-- Telegram -->
+  <a class="float-btn ftelegram"
+     href="https://telegram.me/xemocbai12"
+     target="_blank"
+     rel="noopener"
+     aria-label="Telegram">
+    <span>➤</span>
+  </a>
+
+  <!-- Lên đầu trang -->
+  <a class="float-btn ftop"
+     href="#"
+     aria-label="Lên đầu trang">
+    <span>↑</span>
+  </a>
+
+</div>
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10213b;background:#f5f8fc}
-a{text-decoration:none;color:inherit}.top{background:#fff;border-bottom:1px solid #e8edf3}
-.head{max-width:1300px;margin:auto;min-height:105px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px}
-.brand{display:flex;align-items:center;gap:14px}.brand img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:2px solid #e9232e}
-.brand-title{font-size:30px;font-weight:800}.brand-title span{color:#e9232e}.slogan{font-weight:700;margin-top:5px}.sub{color:#666;margin-top:5px}
-.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.chip{padding:12px 17px;border-radius:28px;font-weight:700;background:#f2f5f9}.phone{background:#ed1c24;color:#fff}.zalo{background:#087ff5;color:#fff}
-.nav{background:#fff;border-bottom:1px solid #e8edf3}.navin{max-width:900px;margin:auto;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:8px}.nav a{padding:13px 17px;font-weight:800}.nav a:hover,.nav a.active{background:#ed1c24;color:#fff;border-radius:28px}
-.hero{background:linear-gradient(135deg,#073b78,#1267aa);height:120px}
-.container{max-width:1100px;margin:auto;padding:45px 15px}.eyebrow{text-align:center;color:#e9232e;font-weight:800;font-size:18px}.title{text-align:center;font-size:36px;margin:8px 0}.intro{text-align:center;color:#66758a;font-size:18px;margin-bottom:30px}
-.layout{display:grid;grid-template-columns:1fr 1.25fr;gap:25px}.box{background:#fff;border:1px solid #e1e7ef;border-radius:18px;padding:28px;box-shadow:0 8px 25px #17365d12}.box h2{margin-top:0}.info{padding:15px 0;border-bottom:1px solid #edf0f4}.info:last-child{border-bottom:0}.info b{display:block;margin-bottom:5px}.info a{color:#e9232e;font-weight:700}
-form{display:grid;gap:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:700;font-size:14px;display:block;margin-bottom:6px}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d8e0ea;border-radius:10px;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:#1976d2}textarea{min-height:130px;resize:vertical}.btn{border:0;background:#ed1c24;color:#fff;padding:14px 20px;border-radius:28px;font-weight:800;font-size:16px;cursor:pointer}
-.note{font-size:13px;color:#6b7788;margin:0}.quick{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.quick a{padding:11px 15px;border-radius:25px;color:#fff;font-weight:800}.call{background:#ed1c24}.z{background:#087ff5}
-footer{background:#10213b;color:#fff;padding:35px 15px;margin-top:20px}
-.foot{max-width:1300px;margin:auto;display:grid;grid-template-columns:1.1fr 1fr 1.5fr;gap:28px;align-items:start}
-.foot-brand{display:flex;align-items:center;gap:14px}
-.foot-brand img{width:82px;height:82px;border-radius:50%;object-fit:cover;border:2px solid #fff;background:#fff}
-.foot-brand strong{font-size:20px}
-.foot-brand span{color:#cbd7e8;display:inline-block;margin-top:6px}
-.foot-info{line-height:1.9;color:#e8eef7}
-.foot-map strong{display:block;margin-bottom:10px}
-.foot-map iframe{width:100%;height:190px;border:0;border-radius:14px;display:block}
-.copyright{grid-column:1/-1;border-top:1px solid #29405f;padding-top:18px;color:#bfcde0}
-.float{position:fixed;right:22px;bottom:25px;display:flex;flex-direction:column;gap:10px}.float a{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:12px;box-shadow:0 5px 16px #0003}.float .call{background:#ed1c24}.float .z{background:#087ff5}.float .book{background:#12a84b}
-@media(max-width:800px){
-.head{flex-direction:column;align-items:flex-start}.chips{justify-content:flex-start}.layout{grid-template-columns:1fr}.row{grid-template-columns:1fr}.brand-title{font-size:25px}
-.foot{grid-template-columns:1fr}.copyright{grid-column:auto}
+/* ===== NÚT NỔI BÊN PHẢI ===== */
+.floating{
+  position:fixed;
+  right:18px;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:99999;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
+
+/* Nút tròn */
+.float-btn{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:#fff;
+  box-shadow:
+    0 4px 12px rgba(0,0,0,.28),
+    inset 0 0 0 3px rgba(255,255,255,.75);
+  transition:.2s;
+}
+
+.float-btn:hover{
+  transform:scale(1.08);
+}
+
+/* Gọi */
+.fcall{
+  background:#ed1c24;
+}
+
+.fcall span{
+  font-size:30px;
+}
+
+/* Zalo */
+.fzalo{
+  background:#087ff5;
+}
+
+.zalo-text{
+  font-family:Arial,sans-serif;
+  font-size:14px;
+  font-weight:900;
+}
+
+/* Đặt xe */
+.fbook{
+  background:#12a84b;
+}
+
+.fbook span{
+  font-size:26px;
+}
+
+/* Facebook */
+.ffacebook{
+  background:#1877f2;
+}
+
+.fb-icon{
+  font-family:Arial,sans-serif;
+  font-size:35px;
+  font-weight:900;
+}
+
+/* Messenger */
+.fmessenger{
+  background:#0084ff;
+}
+
+.fmessenger span{
+  font-size:27px;
+  font-weight:900;
+}
+
+/* Telegram */
+.ftelegram{
+  background:#229ed9;
+}
+
+.ftelegram span{
+  font-size:28px;
+  font-weight:900;
+}
+
+/* Lên đầu */
+.ftop{
+  background:#555;
+}
+
+.ftop span{
+  font-size:30px;
+  font-weight:900;
+}
+
+/* ===== ĐIỆN THOẠI ===== */
 @media(max-width:600px){
-.hero{height:75px}.title{font-size:28px}.brand img{width:70px;height:70px}.float{right:12px}
-.foot-map iframe{height:210px}
+
+  .floating{
+    right:8px;
+    gap:7px;
+  }
+
+  .float-btn{
+    width:50px;
+    height:50px;
+  }
+
+  .fcall span{
+    font-size:25px;
+  }
+
+  .zalo-text{
+    font-size:12px;
+  }
+
+  .fbook span{
+    font-size:22px;
+  }
+
+  .fb-icon{
+    font-size:30px;
+  }
+
+  .fmessenger span,
+  .ftelegram span{
+    font-size:23px;
+  }
+
+  .ftop span{
+    font-size:25px;
+  }
 }
 </style>
-</head>
-<body>
-<header class="top">
-<div class="head">
-<a class="brand" href="index.html">
-<img src="./logo.jpg" alt="Nhà Xe Gia Bảo">
-<div><div class="brand-title">NHÀ XE <span>GIA BẢO</span></div><div class="slogan">AN TOÀN - UY TÍN - CHUYÊN NGHIỆP</div><div class="sub">Mọi hành trình - Vạn niềm tin</div></div>
-</a>
-<div class="chips"><a class="chip phone" href="tel:0342127750">☎ 0342 127 750</a><a class="chip zalo" href="https://zalo.me/0342127750">Zalo</a><span class="chip">📍 Thuận An, Bình Dương</span><span class="chip">⏰ 24/7</span></div>
-</div>
-</header>
-<nav class="nav"><div class="navin">
-<a href="index.html">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="dich-vu.html">Dịch vụ</a><a href="bang-gia.html">Bảng giá</a><a href="tuyen-xe.html">Tuyến xe</a><a href="doi-xe.html">Đội xe</a><a class="active" href="lien-he.html">Liên hệ</a>
-</div></nav>
-<div class="hero"></div>
-
-<main class="container">
-<div class="eyebrow">LIÊN HỆ</div>
-<h1 class="title">Đặt xe cùng Nhà Xe Gia Bảo</h1>
-<p class="intro">Điền thông tin hành trình, chúng tôi sẽ liên hệ tư vấn và báo giá.</p>
-
-<div class="layout">
-<section class="box">
-<h2>Thông tin liên hệ</h2>
-<div class="info"><b>☎ Điện thoại</b><a href="tel:0342127750">0342 127 750</a></div>
-<div class="info"><b>💬 Zalo</b><a href="https://zalo.me/0342127750">Nhắn Zalo 0342 127 750</a></div>
-<div class="info"><b>📍 Khu vực</b>Thuận An, Bình Dương</div>
-<div class="info"><b>🚗 Dịch vụ</b>Xe 4 chỗ, 7 chỗ, 16 chỗ, 29 chỗ có lái</div>
-<div class="info"><b>⏰ Thời gian</b>Phục vụ 24/7</div>
-<div class="quick"><a class="call" href="tel:0342127750">☎ Gọi ngay</a><a class="z" href="https://zalo.me/0342127750">💬 Chat Zalo</a></div>
-</section>
-
-<section class="box">
-<h2>Form đặt xe</h2>
-<form id="bookingForm">
-<div class="row">
-<div><label for="name">Họ và tên *</label><input id="name" name="name" required placeholder="Nhập họ tên"></div>
-<div><label for="phoneInput">Số điện thoại *</label><input id="phoneInput" name="phone" type="tel" required placeholder="Nhập số điện thoại"></div>
-</div>
-<div class="row">
-<div><label for="from">Điểm đón *</label><input id="from" name="from" required placeholder="Ví dụ: Thuận An, Bình Dương"></div>
-<div><label for="to">Điểm đến *</label><input id="to" name="to" required placeholder="Ví dụ: Vũng Tàu"></div>
-</div>
-<div class="row">
-<div><label for="vehicle">Loại xe</label><select id="vehicle" name="vehicle"><option>Xe 4 chỗ</option><option>Xe 7 chỗ</option><option>Xe 16 chỗ</option><option>Xe 29 chỗ</option></select></div>
-<div><label for="date">Ngày đi</label><input id="date" name="date" type="date"></div>
-</div>
-<div><label for="note">Ghi chú lịch trình</label><textarea id="note" name="note" placeholder="Ví dụ: giờ đón, số người, đi về trong ngày, nhiều điểm dừng..."></textarea></div>
-<button class="btn" type="submit">🚗 Gửi yêu cầu đặt xe</button>
-<p class="note">Form sẽ mở Zalo với nội dung đã điền để bạn gửi cho Nhà Xe Gia Bảo.</p>
-</form>
-</section>
-</div>
-</main>
-
-<footer>
-<div class="foot">
-  <div class="foot-brand">
-    <img src="./logo.jpg" alt="Nhà Xe Gia Bảo">
-    <div>
-      <strong>NHÀ XE GIA BẢO</strong><br>
-      AN TOÀN - UY TÍN - CHUYÊN NGHIỆP<br>
-      <span>Mọi hành trình - Vạn niềm tin</span>
-    </div>
-  </div>
-
-  <div class="foot-info">
-    <strong>THÔNG TIN LIÊN HỆ</strong><br>
-    ☎ 0342 127 750<br>
-    💬 Zalo: 0342 127 750<br>
-    📍 Thuận An, Bình Dương<br>
-    ⏰ Phục vụ 24/7
-  </div>
-
-  <div class="foot-map">
-    <strong>VỊ TRÍ NHÀ XE</strong>
-    <iframe
-      src="https://www.google.com/maps?q=Thu%E1%BA%ADn%20An%2C%20B%C3%ACnh%20D%C6%B0%C6%A1ng&output=embed"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Bản đồ Nhà Xe Gia Bảo - Thuận An, Bình Dương">
-    </iframe>
-  </div>
-
-  <div class="copyright">© 2026 Nhà Xe Gia Bảo</div>
-</div>
-</footer>
-
-<div class="float"><a class="call" href="tel:0342127750">☎<br>Gọi</a><a class="z" href="https://zalo.me/0342127750">Zalo</a><a class="book" href="#bookingForm">🚗<br>Đặt xe</a></div>
-
-<script>
-document.getElementById("bookingForm").addEventListener("submit",function(e){
-e.preventDefault();
-const name=document.getElementById("name").value.trim();
-const phone=document.getElementById("phoneInput").value.trim();
-const from=document.getElementById("from").value.trim();
-const to=document.getElementById("to").value.trim();
-const vehicle=document.getElementById("vehicle").value;
-const date=document.getElementById("date").value;
-const note=document.getElementById("note").value.trim();
-const text=`Xin chào Nhà Xe Gia Bảo, tôi muốn đặt xe.%0A%0AHọ tên: ${encodeURIComponent(name)}%0ASĐT: ${encodeURIComponent(phone)}%0AĐiểm đón: ${encodeURIComponent(from)}%0AĐiểm đến: ${encodeURIComponent(to)}%0ALoại xe: ${encodeURIComponent(vehicle)}%0ANgày đi: ${encodeURIComponent(date||"Chưa chọn")}%0AGhi chú: ${encodeURIComponent(note||"Không có")}`;
-window.open("https://zalo.me/0342127750?text="+text,"_blank");
-});
-</script>
-</body>
-</html>
