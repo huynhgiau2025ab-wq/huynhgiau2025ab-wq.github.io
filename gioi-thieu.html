@@ -1,12 +1,308 @@
-<footer class="footer">
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thuê Xe Bình Dương | Nhà Xe Gia Bảo</title><meta name="description" content="Nhà Xe Gia Bảo cho thuê xe 4, 7, 16, 29 chỗ có lái tại Bình Dương, TP.HCM và các tỉnh miền Nam. Đưa đón sân bay, du lịch, công tác, đi tỉnh."><link rel="stylesheet" href="style.css">
 <style>
-.footer{background:#10213b;color:#fff;margin-top:0}
+.image-card{overflow:hidden;padding-top:0}.image-card>img{width:100%;height:190px;object-fit:cover;display:block}.image-card h3,.image-card p,.image-card .more,.image-card .pill-btn{margin-left:24px;margin-right:24px}.image-card h3{margin-top:20px}.image-card p{min-height:48px}.route-photo-img{width:100%;height:150px;object-fit:cover;display:block}.route-card{overflow:hidden}
+</style>
+
+<style>
+footer{
+  background:#10213b;
+  color:#fff;
+  margin-top:0;
+}
+.footer-inner{
+  max-width:1300px;
+  margin:auto;
+  padding:38px 15px 25px;
+  display:grid;
+  grid-template-columns:1.35fr 1fr 1fr 1.15fr;
+  gap:30px;
+  color:#fff;
+}
+.footer-brand img{
+  width:86px;
+  height:86px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #fff;
+  background:#fff;
+  display:block;
+  margin-bottom:12px;
+}
+.footer-brand h3,.footer-col h3{
+  margin:0 0 10px;
+}
+.footer-brand p,.footer-col p{
+  margin:7px 0;
+  line-height:1.55;
+}
+.footer-map-title{
+  font-weight:800;
+  margin:18px 0 10px;
+}
+.footer-brand iframe{
+  width:100%;
+  max-width:430px;
+  height:190px;
+  border:0;
+  border-radius:14px;
+  display:block;
+}
+.footer-copy{
+  grid-column:1/-1;
+  border-top:1px solid rgba(255,255,255,.2);
+  padding-top:18px;
+  text-align:center;
+  color:#d7e1ee;
+}
+@media(max-width:1000px){
+  .footer-inner{grid-template-columns:1fr 1fr;
+}
+}
+@media(max-width:800px){
+  .footer-inner{grid-template-columns:1fr;}
+  .footer-copy{grid-column:auto;}
+}
+</style>
+
+
+
+<style id="professional-floating-buttons">
+.floating{
+  position:fixed!important;
+  right:14px!important;
+  top:50%!important;
+  bottom:auto!important;
+  transform:translateY(-50%)!important;
+  z-index:99999!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:12px!important;
+  align-items:flex-end!important;
+}
+.floating .float{
+  position:relative!important;
+  width:auto!important;
+  height:58px!important;
+  min-width:58px!important;
+  padding:0 0 0 14px!important;
+  border:0!important;
+  border-radius:32px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:9px!important;
+  color:#fff!important;
+  text-decoration:none!important;
+  line-height:1!important;
+  transition:transform .2s ease!important;
+}
+.floating .float:hover{
+  transform:translateX(-3px) scale(1.02)!important;
+}
+.floating .float small{
+  order:1!important;
+  display:block!important;
+  background:linear-gradient(180deg,#444,#242424)!important;
+  color:#fff!important;
+  padding:9px 13px!important;
+  border-radius:18px!important;
+  font-size:13px!important;
+  font-weight:800!important;
+  white-space:nowrap!important;
+  box-shadow:0 3px 9px rgba(0,0,0,.28)!important;
+}
+.floating .float > span{
+  order:2!important;
+  width:58px!important;
+  height:58px!important;
+  flex:0 0 58px!important;
+  border-radius:50%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  color:#fff!important;
+  box-shadow:0 3px 10px rgba(0,0,0,.25), inset 0 0 0 3px rgba(255,255,255,.75)!important;
+  box-sizing:border-box!important;
+}
+.fcall > span{background:#ef151c!important;}
+.fzalo > span{background:#0878e8!important;}
+.fbook > span{background:#09a85b!important;}
+.ffacebook > span{background:#1877f2!important;}
+.fmessenger > span{background:#0084ff!important;}
+.ftelegram > span{background:#229ed9!important;}
+
+.call-icon{font-size:29px!important;line-height:1!important;font-family:Arial,sans-serif!important;}
+.zalo-icon{font-size:13px!important;font-weight:900!important;letter-spacing:-.5px!important;}
+.car-icon{font-size:25px!important;line-height:1!important;}
+.fb-icon{font-size:34px!important;font-family:Arial,sans-serif!important;font-weight:900!important;}
+.msg-icon,.tg-icon{font-size:25px!important;font-weight:900!important;line-height:1!important;}
+
+@media(max-width:600px){
+  .floating{
+    right:8px!important;
+    gap:8px!important;
+  }
+  .floating .float{
+    height:50px!important;
+    min-width:50px!important;
+    padding-left:7px!important;
+    gap:6px!important;
+  }
+  .floating .float > span{
+    width:50px!important;
+    height:50px!important;
+    flex-basis:50px!important;
+  }
+  .floating .float small{
+    padding:7px 9px!important;
+    font-size:10px!important;
+  }
+  .call-icon{font-size:24px!important;}
+  .fb-icon{font-size:29px!important;}
+  .car-icon{font-size:21px!important;}
+  .msg-icon,.tg-icon{font-size:21px!important;}
+  .zalo-icon{font-size:11px!important;}
+}
+</style>
+
+
+<style id="zalo-telegram-professional-icons">
+.floating .zalo-logo,
+.floating .telegram-logo{
+  width:58px!important;
+  height:58px!important;
+  flex:0 0 58px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:50%!important;
+  box-sizing:border-box!important;
+}
+.floating .zalo-logo svg{
+  width:58px!important;
+  height:58px!important;
+  display:block!important;
+}
+.floating .zalo-logo svg path{
+  fill:#fff!important;
+}
+.floating .zalo-logo svg text{
+  fill:#0878e8!important;
+  font-family:Arial,sans-serif!important;
+  font-size:13px!important;
+  font-weight:900!important;
+}
+.floating .telegram-logo svg{
+  width:58px!important;
+  height:58px!important;
+  display:block!important;
+}
+.floating .telegram-logo svg circle{
+  fill:#229ed9!important;
+}
+.floating .telegram-logo svg path{
+  fill:#fff!important;
+}
+@media(max-width:600px){
+  .floating .zalo-logo,
+  .floating .telegram-logo{
+    width:50px!important;
+    height:50px!important;
+    flex-basis:50px!important;
+  }
+  .floating .zalo-logo svg,
+  .floating .telegram-logo svg{
+    width:50px!important;
+    height:50px!important;
+  }
+}
+</style>
+
+
+<style id="six-professional-buttons">
+.floating{position:fixed!important;right:14px!important;top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;z-index:99999!important;display:flex!important;flex-direction:column!important;gap:12px!important;align-items:flex-end!important}
+.floating .float{position:relative!important;width:auto!important;height:58px!important;min-width:58px!important;padding:0!important;border:0!important;border-radius:32px!important;background:transparent!important;box-shadow:none!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-end!important;gap:9px!important;color:#fff!important;text-decoration:none!important}
+.floating .float small{background:linear-gradient(#444,#252525)!important;color:#fff!important;padding:9px 13px!important;border-radius:18px!important;font-size:13px!important;font-weight:800!important;white-space:nowrap!important;box-shadow:0 3px 9px rgba(0,0,0,.28)!important}
+.floating .float>span{width:58px!important;height:58px!important;flex:0 0 58px!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;box-shadow:0 3px 10px rgba(0,0,0,.25),inset 0 0 0 3px rgba(255,255,255,.75)!important}
+.fcall>span{background:#ef151c!important}.fzalo>span{background:#0878e8!important}.fbook>span{background:#08a95b!important}.ffacebook>span{background:#1877f2!important}.fmessenger>span{background:#0084ff!important}.ftelegram>span{background:#229ed9!important}
+.call-icon{font-size:29px!important}.car-icon{font-size:25px!important}.fb-icon{font-size:34px!important;font-weight:900!important;font-family:Arial,sans-serif!important}.msg-icon{font-size:25px!important}
+.zalo-logo svg,.telegram-logo svg{width:58px!important;height:58px!important;display:block!important}.zalo-logo svg path{fill:#fff!important}.zalo-logo svg text{fill:#0878e8!important;font-family:Arial,sans-serif!important;font-size:13px!important;font-weight:900!important}.telegram-logo svg circle{fill:#229ed9!important}.telegram-logo svg path{fill:#fff!important}
+@media(max-width:600px){.floating{right:8px!important;gap:8px!important}.floating .float{height:50px!important;gap:6px!important}.floating .float>span{width:50px!important;height:50px!important;flex-basis:50px!important}.floating .float small{padding:7px 9px!important;font-size:10px!important}.zalo-logo svg,.telegram-logo svg{width:50px!important;height:50px!important}.call-icon{font-size:24px!important}.car-icon{font-size:21px!important}.fb-icon{font-size:29px!important}.msg-icon{font-size:21px!important}}
+</style>
+
+<style id="final-floating-buttons">
+.floating{position:fixed!important;right:14px!important;top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;z-index:99999!important;display:flex!important;flex-direction:column!important;gap:10px!important;align-items:flex-end!important}
+.floating .float{width:auto!important;height:58px!important;min-width:58px!important;padding:0!important;border:0!important;border-radius:32px!important;background:transparent!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-end!important;gap:9px!important;color:#fff!important;text-decoration:none!important;transition:transform .2s ease!important}
+.floating .float:hover{transform:translateX(-3px) scale(1.02)!important}
+.floating .float small{background:linear-gradient(#444,#252525)!important;color:#fff!important;padding:9px 13px!important;border-radius:18px!important;font-size:13px!important;font-weight:800!important;white-space:nowrap!important;box-shadow:0 3px 9px rgba(0,0,0,.28)!important}
+.floating .float>span{width:58px!important;height:58px!important;flex:0 0 58px!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;box-shadow:0 3px 10px rgba(0,0,0,.25),inset 0 0 0 3px rgba(255,255,255,.75)!important}
+.fcall>span{background:#ef151c!important}.fzalo>span{background:#0878e8!important}.fbook>span{background:#08a95b!important}.ffacebook>span{background:#1877f2!important}.fmessenger>span{background:#0084ff!important}.ftelegram>span{background:#229ed9!important}.top-btn>span{background:#555!important}
+.call-icon{font-size:29px!important}.car-icon{font-size:25px!important}.fb-icon{font-size:34px!important;font-weight:900!important;font-family:Arial,sans-serif!important}.msg-icon{font-size:25px!important}.top-icon{font-size:28px!important;font-weight:900!important}
+.zalo-logo svg,.telegram-logo svg{width:58px!important;height:58px!important;display:block!important}.zalo-logo svg path{fill:#fff!important}.zalo-logo svg text{fill:#0878e8!important;font-family:Arial,sans-serif!important;font-size:13px!important;font-weight:900!important}.telegram-logo svg circle{fill:#229ed9!important}.telegram-logo svg path{fill:#fff!important}
+@media(max-width:600px){.floating{right:8px!important;gap:7px!important}.floating .float{height:50px!important;gap:6px!important}.floating .float>span{width:50px!important;height:50px!important;flex-basis:50px!important}.floating .float small{padding:7px 9px!important;font-size:10px!important}.zalo-logo svg,.telegram-logo svg{width:50px!important;height:50px!important}.call-icon{font-size:24px!important}.car-icon{font-size:21px!important}.fb-icon{font-size:29px!important}.msg-icon{font-size:21px!important}.top-icon{font-size:24px!important}}
+</style>
+
+</head><body>
+
+<header class="top" id="top"><div class="head container"><a class="brand" href="index.html"><img src="./logo.jpg" alt="Nhà Xe Gia Bảo"><div><div class="brand-title">NHÀ XE <span>GIA BẢO</span></div><div class="brand-sub">AN TOÀN - UY TÍN - CHUYÊN NGHIỆP</div><div class="slogan">Mọi hành trình - Vạn niềm tin</div></div></a><div class="head-info"><a class="head-chip red" href="tel:0342127750">☎ 0342 127 750</a><a class="head-chip blue" href="https://zalo.me/0342127750">Zalo</a><span class="head-chip">📍 Thuận An, Bình Dương</span><span class="head-chip">⏰ 24/7</span></div></div><nav class="nav"><a class="active" href="index.html">Trang chủ</a><a class="" href="gioi-thieu.html">Giới thiệu</a><a class="" href="dich-vu.html">Dịch vụ</a><a class="" href="bang-gia.html">Bảng giá</a><a class="" href="tuyen-xe.html">Tuyến xe</a><a class="" href="doi-xe.html">Đội xe</a><a class="" href="lien-he.html">Liên hệ</a></nav></header>
+<section class="hero"><img src="./cover.jpg" alt="Nhà Xe Gia Bảo"><div class="hero-copy"><div class="tag">NHÀ XE GIA BẢO</div><h1>THUÊ XE BÌNH DƯƠNG</h1><h2>ĐƯA ĐÓN SÂN BAY - DU LỊCH - CÔNG TÁC - ĐI TỈNH</h2><div class="hero-p">XE ĐỜI MỚI · TÀI XẾ KINH NGHIỆM · GIÁ HỢP LÝ</div><div class="trust"><span>✓ An toàn - Đúng giờ</span><span>✓ Xe sạch, tiện nghi</span><span>✓ Tài xế chuyên nghiệp</span><span>✓ Phục vụ 24/7</span></div></div></section>
+
+<section class="quote" id="bao-gia"><div class="quote-head">🚗 ĐẶT XE NHANH - NHẬN BÁO GIÁ NGAY</div>
+<div class="tabs"><button class="active">Đặt xe</button><button onclick="document.querySelector('#tuyen').scrollIntoView()">Xem tuyến</button></div>
+<form class="quote-form" id="quoteForm">
+<div class="field"><label>📍 Điểm đón</label><input id="from" list="locations" placeholder="Nhập điểm đón" required></div>
+<div class="field"><label>📍 Điểm đến</label><input id="to" list="locations" placeholder="Nhập điểm đến" required></div>
+<div class="field"><label>🚗 Loại xe</label><select id="vehicle"><option value="4">Xe 4 chỗ</option><option value="7">Xe 7 chỗ</option><option value="16">Xe 16 chỗ</option><option value="29">Xe 29 chỗ</option></select></div>
+<div class="field"><label>📅 Ngày đi</label><input type="date"></div>
+<div class="field"><label>⏰ Giờ đi</label><input type="time"></div>
+<div class="field"><label>🔄 Hình thức chuyến</label><select><option>Đi 1 chiều</option><option>Đi về trong ngày</option><option>Khứ hồi</option><option>Thuê theo ngày</option></select></div>
+<div class="field"><label>👥 Số khách</label><input type="number" min="1" placeholder="Ví dụ: 4"></div>
+<div class="field"><label>👤 Họ và tên</label><input placeholder="Nhập họ tên"></div>
+<div class="field"><label>☎ Số điện thoại</label><input type="tel" placeholder="Nhập số điện thoại"></div>
+<div class="field full"><label>📝 Ghi chú lịch trình</label><textarea rows="3" placeholder="Ví dụ: đón tại nhà, có nhiều điểm dừng, cần ghế trẻ em..."></textarea></div>
+<button class="quote-submit">✈️ BÁO GIÁ NGAY</button></form>
+<datalist id="locations"><option>Bình Dương</option><option>TP.HCM</option><option>Vũng Tàu</option><option>Phan Thiết</option><option>Mũi Né</option><option>Đà Lạt</option><option>Nha Trang</option><option>Cần Thơ</option><option>Đồng Nai</option><option>Long An</option><option>Tây Ninh</option><option>Bình Phước</option></datalist>
+<div class="quote-note">Giá trên website là giá tham khảo theo tuyến. Nhân viên sẽ xác nhận lại lịch trình và giá trước khi chốt xe.</div><div class="result" id="quoteResult" hidden></div></section><div class="feature-strip"><div class="feature"><div class="i">🛡️</div><b>AN TOÀN</b><small>Xe bảo dưỡng định kỳ</small></div><div class="feature"><div class="i">👍</div><b>UY TÍN</b><small>Đúng giờ - Đúng hẹn</small></div><div class="feature"><div class="i">👥</div><b>CHUYÊN NGHIỆP</b><small>Tài xế kinh nghiệm</small></div><div class="feature"><div class="i">⏰</div><b>PHỤC VỤ 24/7</b><small>Luôn sẵn sàng hỗ trợ</small></div><div class="feature"><div class="i">💰</div><b>GIÁ HỢP LÝ</b><small>Báo giá minh bạch</small></div></div>
+<section class="section alt" id="dich-vu"><div class="container"><div class="section-title"><div class="eyebrow">DỊCH VỤ</div><h2>Dịch vụ của Nhà Xe Gia Bảo</h2><p>Nhận phục vụ cá nhân, gia đình, doanh nghiệp và đoàn khách với nhiều loại xe có lái.</p></div><div class="grid4">
+<article class="card image-card"><img src="assets/dua-don-san-bay.webp" alt="Đưa đón sân bay"><h3>Đưa đón sân bay</h3><p>Đón và trả khách tại sân bay, chủ động giờ giấc, phù hợp cá nhân và gia đình.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/du-lich.webp" alt="Du lịch - tham quan"><h3>Du lịch - tham quan</h3><p>Xe riêng có lái cho các chuyến đi cuối tuần, nghỉ dưỡng và tham quan.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/city-tour.webp" alt="City Tour"><h3>Công tác - hợp đồng</h3><p>Phục vụ doanh nghiệp, chuyên gia, đoàn công tác và lịch trình nhiều điểm.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/di-chua.webp" alt="Hành hương - viếng chùa"><h3>Hành hương - viếng chùa</h3><p>Đi chùa, hành hương, lễ hội với lịch trình linh hoạt theo đoàn.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/dam-cuoi.webp" alt="Xe cưới hỏi"><h3>Xe cưới hỏi</h3><p>Xe phục vụ lễ cưới, đón dâu, gia đình và khách mời.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/ve-que.webp" alt="Xe gia đình về quê"><h3>Xe gia đình</h3><p>Không gian thoải mái cho gia đình, người lớn tuổi và trẻ nhỏ.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/du-lich-02.webp" alt="Xe đi tỉnh - du lịch"><h3>Xe đi tỉnh</h3><p>Nhận đưa đón từ Bình Dương, TP.HCM đi các tỉnh miền Nam.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+<article class="card image-card"><img src="assets/du-lich-02.webp" alt="Xe tiện chuyến"><h3>Xe tiện chuyến</h3><p>Có thể tư vấn lịch trình phù hợp và tối ưu chi phí theo nhu cầu.</p><a class="more" href="dich-vu.html">Xem chi tiết →</a></article>
+</div></div></section>
+<section class="section" id="doi-xe"><div class="container"><div class="section-title"><div class="eyebrow">ĐỘI XE</div><h2>Đội xe đa dạng - phục vụ linh hoạt</h2><p>Lựa chọn xe theo số lượng khách và nhu cầu lịch trình.</p></div><div class="grid4">
+<article class="card fleet-card image-card"><img src="assets/xe-4-cho-01.jpg" alt="Xe 4 chỗ"><h3>XE 4 CHỖ</h3><p>Tiết kiệm - Phù hợp gia đình</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+<article class="card fleet-card image-card"><img src="assets/xe-7-cho-01.jpg" alt="Xe 7 chỗ"><h3>XE 7 CHỖ</h3><p>Rộng rãi - Thoải mái</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+<article class="card fleet-card image-card"><img src="assets/xe-16-cho-01.png" alt="Xe 16 chỗ"><h3>XE 16 CHỖ</h3><p>Nhóm đông - Du lịch - Công ty</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+<article class="card fleet-card image-card"><img src="assets/xe-29-cho.jpg" alt="Xe 29 chỗ"><h3>XE 29 CHỖ</h3><p>Sự kiện - Tour đoàn - Hành hương</p><a class="pill-btn" href="doi-xe.html">Xem chi tiết</a></article>
+</div></div></section>
+<section class="section alt" id="tuyen"><div class="container"><div class="section-title"><div class="eyebrow">BẢNG GIÁ</div><h2>Các tuyến phổ biến</h2><p>Hình ảnh minh họa theo tuyến; giá tham khảo và lịch trình cụ thể sẽ được xác nhận trước khi đặt xe.</p></div><div class="route-grid">
+<article class="route-card"><img class="route-photo-img" src="assets/city-tour.webp" alt="TP.HCM - thành phố Hồ Chí Minh"><div class="route-body"><b>Bình Dương → TP.HCM</b><strong>Từ 300.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/du-lich.webp" alt="Vũng Tàu - biển"><div class="route-body"><b>Bình Dương → Vũng Tàu</b><strong>Từ 860.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/phan-thiet.webp" alt="Phan Thiết"><div class="route-body"><b>Bình Dương → Phan Thiết</b><strong>Từ 1.300.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/di-chua.webp" alt="Đà Lạt"><div class="route-body"><b>Bình Dương → Đà Lạt</b><strong>Từ 2.400.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/du-lich-02.webp" alt="Nha Trang - biển"><div class="route-body"><b>Bình Dương → Nha Trang</b><strong>Từ 2.400.000đ</strong></div></article>
+<article class="route-card"><img class="route-photo-img" src="assets/can-tho.webp" alt="Cần Thơ - miền Tây"><div class="route-body"><b>Bình Dương → Cần Thơ</b><strong>Từ 1.300.000đ</strong></div></article>
+</div></div></section>
+<section class="area"><div class="container"><h2>KHU VỰC PHỤC VỤ</h2><p style="text-align:center;color:#dbe6f5">Nhận đưa đón tại Bình Dương, TP.HCM và nhiều tỉnh thành miền Nam.</p><div class="area-list"><span>TP. Hồ Chí Minh</span><span>Bình Dương</span><span>Đồng Nai</span><span>Bà Rịa - Vũng Tàu</span><span>Long An</span><span>Bình Phước</span><span>Tây Ninh</span><span>Tiền Giang</span><span>Bến Tre</span><span>Cần Thơ</span><span>Đà Lạt</span><span>Nha Trang</span><span>Phan Thiết</span><span>Cà Mau</span></div></div></section>
+<section class="section"><div class="container"><div class="section-title"><div class="eyebrow">QUY TRÌNH</div><h2>Đặt xe đơn giản - nhanh chóng</h2></div><div class="process"><div class="step"><div class="num">1</div><h3>Gửi lịch trình</h3><p>Điền điểm đón, điểm đến, ngày giờ và loại xe.</p></div><div class="step"><div class="num">2</div><h3>Nhận báo giá</h3><p>Nhân viên kiểm tra lịch trình và xác nhận giá.</p></div><div class="step"><div class="num">3</div><h3>Chốt xe</h3><p>Xác nhận thông tin và thời gian đón khách.</p></div><div class="step"><div class="num">4</div><h3>Đón khách</h3><p>Tài xế chủ động liên hệ và phục vụ đúng lịch.</p></div></div></div></section>
+<section class="why"><div class="why-photo"></div><div class="why-copy"><h2>VÌ SAO CHỌN NHÀ XE GIA BẢO?</h2><ul><li>Xe sạch sẽ, tiện nghi và được kiểm tra định kỳ.</li><li>Tài xế lịch sự, chủ động liên hệ trước giờ đón.</li><li>Báo giá rõ ràng theo lịch trình, hạn chế phát sinh.</li><li>Phục vụ 24/7, hỗ trợ nhanh khi khách cần.</li><li>Có nhiều loại xe cho gia đình, công ty và đoàn.</li><li>Nhận các tuyến Bình Dương, TP.HCM và miền Nam.</li></ul><div class="actions"><a class="pill-btn" href="tel:0342127750">☎ 0342 127 750</a><a class="pill-btn" style="background:#0878e8" href="https://zalo.me/0342127750">Zalo - Đặt xe</a></div></div></section>
+<section class="section alt"><div class="container"><div class="section-title"><div class="eyebrow">CÂU HỎI THƯỜNG GẶP</div><h2>Khách hàng thường hỏi</h2></div><div class="faq"><details><summary>Nhà xe có cho thuê xe tự lái không?</summary><p>Dịch vụ trên website tập trung vào xe có tài xế.</p></details><details><summary>Có nhận đón tại nhà không?</summary><p>Có thể tư vấn điểm đón cụ thể theo lịch trình của khách.</p></details><details><summary>Giá trên website có phải giá cuối cùng không?</summary><p>Giá hiển thị là giá tham khảo theo tuyến. Nhân viên sẽ xác nhận lại lịch trình và báo giá trước khi chốt.</p></details><details><summary>Có nhận hợp đồng cho công ty và đoàn không?</summary><p>Có thể tư vấn xe và lịch trình theo nhu cầu doanh nghiệp, đoàn khách.</p></details></div></div></section>
+
+<footer>
+<style>
 .footer-inner{max-width:1300px;margin:auto;padding:42px 18px 0;display:grid;grid-template-columns:1.15fr 1fr 1fr 1.15fr;gap:30px;color:#fff}
 .footer-col h3,.footer-brand h3{margin:0 0 14px;font-size:20px;color:#fff}
 .footer-col h3:after,.footer-brand h3:after{content:"";display:block;width:42px;height:3px;background:#8aa7c9;margin-top:10px}
 .footer-col p,.footer-brand p{margin:9px 0;line-height:1.6}
-.footer-col a,.footer-brand a{color:#fff;text-decoration:none}
-.footer-col a:hover,.footer-brand a:hover{text-decoration:underline}
+.footer-col a{color:#fff;text-decoration:none}
+.footer-col a:hover{text-decoration:underline}
 .footer-brand img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid #fff;background:#fff;margin-bottom:10px}
 .footer-map-title{font-weight:700;margin:18px 0 8px}
 .footer-map{width:100%;height:150px;border:0;border-radius:10px;display:block}
@@ -17,7 +313,6 @@
 @media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr}.footer-thanks,.footer-copy{grid-column:1/-1}}
 @media(max-width:600px){.footer-inner{grid-template-columns:1fr;padding-top:30px}.footer-thanks,.footer-copy{grid-column:1}.footer-thanks{height:44px}.footer-thanks-track{font-size:15px}}
 </style>
-
 <div class="footer-inner">
   <div class="footer-brand">
     <img src="./logo.jpg" alt="Nhà Xe Gia Bảo">
@@ -65,9 +360,20 @@
   </div>
 
   <div class="footer-thanks">
-    <div class="footer-thanks-track">📣 Cảm ơn quý khách đã lựa chọn và tin tưởng dịch vụ của Nhà Xe Gia Bảo! • Kính chúc quý khách thượng lộ bình an và có những hành trình vui vẻ!</div>
+    <div class="footer-thanks-track">Cảm ơn quý khách đã lựa chọn và tin tưởng dịch vụ của Nhà Xe Gia Bảo! • Kính chúc quý khách thượng lộ bình an và có những hành trình vui vẻ!</div>
   </div>
 
   <div class="footer-copy">© 2026 Nhà Xe Gia Bảo. Tất cả quyền được bảo vệ.</div>
 </div>
 </footer>
+
+<div class="floating">
+<a class="float fcall" href="tel:0342127750" aria-label="Gọi ngay"><small>Gọi ngay</small><span class="call-icon">☎</span></a>
+<a class="float fzalo" href="https://zalo.me/0342127750" target="_blank" rel="noopener" aria-label="Zalo"><small>Zalo</small><span class="zalo-logo"><svg viewBox="0 0 64 64"><path d="M32 7C18.2 7 7 17.3 7 30c0 8.2 4.8 15.3 12.1 19.2L17 57l9.5-5.3c1.8.4 3.6.6 5.5.6 13.8 0 25-10.3 25-23S45.8 7 32 7Z"/><text x="32" y="39" text-anchor="middle">Zalo</text></svg></span></a>
+<a class="float fbook" href="index.html#bao-gia" aria-label="Đặt xe"><small>Đặt xe</small><span class="car-icon">🚗</span></a>
+<a class="float ffacebook" href="https://www.facebook.com/thuexebinhduong24h" target="_blank" rel="noopener" aria-label="Facebook"><small>Facebook</small><span class="fb-icon">f</span></a>
+<a class="float fmessenger" href="https://m.me/417943681413040" target="_blank" rel="noopener" aria-label="Messenger"><small>Messenger</small><span class="msg-icon">➤</span></a>
+<a class="float ftelegram" href="https://telegram.me/xemocbai12" target="_blank" rel="noopener" aria-label="Telegram"><small>Telegram</small><span class="telegram-logo"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30"/><path d="M15 31.2 48.5 18c1.6-.6 3 .4 2.5 2.2L43.8 46c-.4 1.8-1.5 2.3-3 1.4l-9.5-7-4.6 4.4c-.5.5-.9.9-1.8.9l.7-9.7 17.7-14.9c.8-.7-.2-1.1-1.1-.5L20.3 33.2l-8.4-2.7c-1.8-.6-1.8-1.8.4-2.7Z"/></svg></span></a>
+<a class="float top-btn" href="#top" aria-label="Lên đầu trang"><small>Đầu trang</small><span class="top-icon">↑</span></a>
+</div>
+<script src="script.js"></script></body></html>
