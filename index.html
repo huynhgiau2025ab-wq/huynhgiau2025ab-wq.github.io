@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Thuê Xe Bình Dương | Nhà Xe Gia Bảo</title><meta content="Nhà Xe Gia Bảo cho thuê xe 4, 7, 16, 29 chỗ có lái tại Bình Dương, TP.HCM và các tỉnh miền Nam. Đưa đón sân bay, du lịch, công tác, đi tỉnh." name="description"/><link href="style.css" rel="stylesheet"/>
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Thuê Xe Bình Dương Có Lái | Nhà Xe Gia Bảo</title>
+<meta name="description" content="Thuê xe Bình Dương có lái 4, 7, 16, 29 chỗ. Nhà Xe Gia Bảo nhận đưa đón sân bay, đi tỉnh, du lịch, công tác tại Bình Dương, TP.HCM và miền Nam.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://thuexeditinhgiare.top/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Thuê Xe Bình Dương Có Lái | Nhà Xe Gia Bảo">
+<meta property="og:description" content="Cho thuê xe 4, 7, 16, 29 chỗ có lái tại Bình Dương, TP.HCM và các tỉnh miền Nam.">
+<meta property="og:url" content="https://thuexeditinhgiare.top/">
+<meta property="og:site_name" content="Nhà Xe Gia Bảo">
+<meta name="twitter:card" content="summary_large_image">
+<link href="style.css" rel="stylesheet"/>
 <style>
 .image-card{overflow:hidden;padding-top:0}.image-card>img{width:100%;height:190px;object-fit:cover;display:block}.image-card h3,.image-card p,.image-card .more,.image-card .pill-btn{margin-left:24px;margin-right:24px}.image-card h3{margin-top:20px}.image-card p{min-height:48px}.route-photo-img{width:100%;height:150px;object-fit:cover;display:block}.route-card{overflow:hidden}
 </style>
@@ -128,16 +139,213 @@ section[id]{scroll-margin-top:90px}
   .price-table th:first-child,.price-table td:first-child{min-width:190px}
   .fleet-badge{margin-left:18px;margin-right:18px}
 }
-</style><style id="floating-clean">
-.floating{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:99999;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.floating .float{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.25);font-weight:800}
-.floating .float small{display:none}
-.fcall{background:#ef151c}.fzalo{background:#0878e8}.fbook{background:#08a95b}.ffacebook{background:#1877f2}.fmessenger{background:#0084ff}.ftelegram{background:#229ed9}.top-btn{background:#555}
-@media(max-width:600px){.floating{right:8px;gap:7px}.floating .float{width:50px;height:50px}}
+</style><style id="floating-contact-new">
+/* === 6 NÚT LIÊN HỆ - kiểu thanh nổi giống mẫu tham khảo === */
+.floating-contact{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:78px;
+  z-index:99999;
+  pointer-events:none;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+/* 2 nút chat nổi bên trái */
+.floating-contact .side-chats{
+  position:absolute;
+  left:20px;
+  bottom:78px;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  pointer-events:auto;
+}
+
+.floating-contact .side-chat{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-width:142px;
+  height:47px;
+  padding:0 18px;
+  border-radius:24px;
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:700;
+  box-shadow:0 4px 13px rgba(0,0,0,.22);
+  transition:transform .18s ease,filter .18s ease;
+}
+.floating-contact .side-chat:hover{
+  transform:translateX(3px);
+  filter:brightness(1.05);
+}
+.side-chat.zalo-chat{background:#0878e8}
+.side-chat.facebook-chat{background:#1877f2}
+.side-chat .chat-icon{
+  width:25px;height:25px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:rgba(255,255,255,.18);
+  font-weight:900;
+}
+
+/* thanh trắng phía dưới */
+.floating-contact .bottom-bar{
+  width:min(700px,calc(100% - 40px));
+  height:78px;
+  padding:0 12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  gap:4px;
+  background:#fff;
+  border-radius:42px 42px 0 0;
+  box-shadow:0 -4px 18px rgba(0,0,0,.16);
+  pointer-events:auto;
+}
+
+/* 4 nút chính */
+.floating-contact .bottom-item{
+  position:relative;
+  min-width:105px;
+  height:72px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-end;
+  padding-bottom:8px;
+  color:#333;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  transition:transform .18s ease;
+}
+.floating-contact .bottom-item:hover{transform:translateY(-2px)}
+
+.floating-contact .bottom-icon{
+  width:38px;height:38px;
+  margin-bottom:4px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:18px;
+  font-weight:900;
+  box-shadow:0 2px 7px rgba(0,0,0,.15);
+}
+.bottom-item.contact .bottom-icon{background:#55b8df}
+.bottom-item.call .bottom-icon{background:#e00038}
+.bottom-item.messenger .bottom-icon{background:#0084ff}
+.bottom-item.zalo .bottom-icon{background:#0878e8}
+
+/* Nút gọi ở giữa nhô lên giống mẫu */
+.floating-contact .bottom-item.call{
+  margin-top:-31px;
+}
+.floating-contact .bottom-item.call .bottom-icon{
+  width:62px;height:62px;
+  border:3px solid #fff;
+  font-size:27px;
+  box-shadow:0 3px 12px rgba(0,0,0,.25);
+}
+.floating-contact .bottom-item.call span:last-child{
+  background:#0878e8;
+  color:#fff;
+  border-radius:9px;
+  padding:2px 8px;
+  margin-top:-1px;
+  font-size:12px;
+}
+
+/* Không che nội dung trên mobile */
+@media(max-width:700px){
+  .floating-contact{height:68px}
+  .floating-contact .side-chats{
+    left:8px;
+    bottom:68px;
+    gap:5px;
+  }
+  .floating-contact .side-chat{
+    min-width:118px;
+    height:39px;
+    padding:0 13px;
+    font-size:13px;
+    border-radius:21px;
+  }
+  .floating-contact .side-chat .chat-icon{
+    width:21px;height:21px;
+  }
+  .floating-contact .bottom-bar{
+    width:100%;
+    height:68px;
+    border-radius:28px 28px 0 0;
+    padding:0 4px;
+  }
+  .floating-contact .bottom-item{
+    min-width:0;
+    flex:1;
+    height:63px;
+    padding-bottom:5px;
+    font-size:10px;
+  }
+  .floating-contact .bottom-icon{
+    width:31px;height:31px;
+    margin-bottom:2px;
+    font-size:15px;
+  }
+  .floating-contact .bottom-item.call{
+    margin-top:-24px;
+  }
+  .floating-contact .bottom-item.call .bottom-icon{
+    width:54px;height:54px;
+    font-size:23px;
+  }
+  .floating-contact .bottom-item.call span:last-child{
+    font-size:10px;
+    padding:1px 6px;
+  }
+}
 </style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Nhà Xe Gia Bảo",
+  "url":"https://thuexeditinhgiare.top/",
+  "telephone":"+84-342-127-750",
+  "description":"Dịch vụ thuê xe 4, 7, 16, 29 chỗ có lái tại Bình Dương, TP.HCM và các tỉnh miền Nam.",
+  "areaServed":["Bình Dương","TP. Hồ Chí Minh","Đồng Nai","Bà Rịa - Vũng Tàu","Long An","Tây Ninh","Bình Phước","Cần Thơ","Phan Thiết","Đà Lạt","Nha Trang"],
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Thuận An",
+    "addressRegion":"Bình Dương",
+    "addressCountry":"VN"
+  },
+  "sameAs":[
+    "https://www.facebook.com/thuexebinhduong24h",
+    "https://telegram.me/xemocbai12"
+  ]
+}
+</script>
 </head><body>
 <header class="top" id="top"><div class="head container"><a class="brand" href="index.html"><img alt="Nhà Xe Gia Bảo" src="logo.jpg"/ onerror="this.style.display='none'"><div><div class="brand-title">NHÀ XE <span>GIA BẢO</span></div><div class="brand-sub">AN TOÀN - UY TÍN - CHUYÊN NGHIỆP</div><div class="slogan">Mọi hành trình - Vạn niềm tin</div></div></a><div class="head-info"><a class="head-chip red" href="tel:0342127750">☎ 0342 127 750</a><a class="head-chip blue" href="https://zalo.me/0342127750">Zalo</a><span class="head-chip">📍 Thuận An, Bình Dương</span><span class="head-chip">⏰ 24/7</span></div></div><nav class="nav"><a class="active" href="#top">Trang chủ</a><a class="" href="gioi-thieu.html">Giới thiệu</a><a class="" href="#dich-vu">Dịch vụ</a><a class="" href="#bang-gia">Bảng giá</a><a class="" href="#tuyen">Tuyến xe</a><a class="" href="#doi-xe">Đội xe</a><a class="" href="#lien-he">Liên hệ</a></nav></header>
 <section class="hero"><img alt="Nhà Xe Gia Bảo" src="cover.jpg"/ onerror="this.style.display='none'"><div class="hero-copy"><div class="tag">NHÀ XE GIA BẢO</div><h1>THUÊ XE BÌNH DƯƠNG</h1><h2>ĐƯA ĐÓN SÂN BAY - DU LỊCH - CÔNG TÁC - ĐI TỈNH</h2><div class="hero-p">XE ĐỜI MỚI · TÀI XẾ KINH NGHIỆM · GIÁ HỢP LÝ</div><div class="trust"><span>✓ An toàn - Đúng giờ</span><span>✓ Xe sạch, tiện nghi</span><span>✓ Tài xế chuyên nghiệp</span><span>✓ Phục vụ 24/7</span></div></div></section>
+<section class="seo-intro section">
+<div class="container">
+<div class="section-title">
+<div class="eyebrow">THUÊ XE BÌNH DƯƠNG CÓ LÁI</div>
+<h2>Thuê xe Bình Dương đi TP.HCM và các tỉnh miền Nam</h2>
+<p>Nhà Xe Gia Bảo cung cấp dịch vụ thuê xe Bình Dương có lái với các dòng xe 4 chỗ, 7 chỗ, 16 chỗ và 29 chỗ. Nhận đưa đón tận nơi, đi sân bay, đi tỉnh, du lịch, công tác, cưới hỏi và hành hương theo lịch trình của khách.</p>
+<p>Từ Bình Dương, khách có thể đặt xe đi TP.HCM, Đồng Nai, Vũng Tàu, Tây Ninh, Long An, Bình Phước, Cần Thơ, Phan Thiết, Đà Lạt, Nha Trang và nhiều điểm đến khác ở miền Nam. Lịch trình, loại xe và giá được xác nhận trước khi chốt chuyến.</p>
+</div>
+</div>
+</section>
 <section class="quote" id="bao-gia"><div class="quote-head">🚗 ĐẶT XE NHANH - NHẬN BÁO GIÁ NGAY</div>
 <div class="tabs"><button class="active">Đặt xe</button><button onclick="document.querySelector('#tuyen').scrollIntoView()">Xem tuyến</button></div>
 <form action="cam-on-dat-xe.html" method="get" class="quote-form" id="quoteForm"><input type="hidden" name="nguon" value="trang-chu">
@@ -157,7 +365,7 @@ section[id]{scroll-margin-top:90px}
 <section class="section alt" id="dich-vu"><div class="container"><div class="section-title"><div class="eyebrow">DỊCH VỤ</div><h2>Dịch vụ của Nhà Xe Gia Bảo</h2><p>Nhận phục vụ cá nhân, gia đình, doanh nghiệp và đoàn khách với nhiều loại xe có lái.</p></div><div class="grid4">
 <article class="card image-card"><img alt="Đưa đón sân bay" src="assets/dua-don-san-bay.webp"/><h3>Đưa đón sân bay</h3><p>Đón và trả khách tại sân bay, chủ động giờ giấc, phù hợp cá nhân và gia đình.</p></article>
 <article class="card image-card"><img alt="Du lịch - tham quan" src="assets/du-lich.webp"/><h3>Du lịch - tham quan</h3><p>Xe riêng có lái cho các chuyến đi cuối tuần, nghỉ dưỡng và tham quan.</p></article>
-<article class="card image-card"><img alt="City Tour" src="assets/city-tour.webp"/><h3>Công tác - hợp đồng</h3><p>Phục vụ doanh nghiệp, chuyên gia, đoàn công tác và lịch trình nhiều điểm.</p></article>
+<article class="card image-card"><img alt="Xe đưa đón công tác và hợp đồng" src="assets/city-tour.webp"/><h3>Công tác - hợp đồng</h3><p>Phục vụ doanh nghiệp, chuyên gia, đoàn công tác và lịch trình nhiều điểm.</p></article>
 <article class="card image-card"><img alt="Hành hương - viếng chùa" src="assets/di-chua.webp"/><h3>Hành hương - viếng chùa</h3><p>Đi chùa, hành hương, lễ hội với lịch trình linh hoạt theo đoàn.</p></article>
 <article class="card image-card"><img alt="Xe cưới hỏi" src="assets/dam-cuoi.webp"/><h3>Xe cưới hỏi</h3><p>Xe phục vụ lễ cưới, đón dâu, gia đình và khách mời.</p></article>
 <article class="card image-card"><img alt="Xe gia đình về quê" src="assets/ve-que.webp"/><h3>Xe gia đình</h3><p>Không gian thoải mái cho gia đình, người lớn tuổi và trẻ nhỏ.</p></article>
@@ -258,12 +466,40 @@ section[id]{scroll-margin-top:90px}
 <div class="footer-copy">© 2026 Nhà Xe Gia Bảo. Tất cả quyền được bảo vệ.</div>
 </div>
 </footer>
-<div class="floating">
-<a aria-label="Gọi ngay" class="float fcall" href="tel:0342127750">☎</a>
-<a aria-label="Zalo" class="float fzalo" href="https://zalo.me/0342127750" target="_blank" rel="noopener">Z</a>
-<a aria-label="Đặt xe" class="float fbook" href="#bao-gia">🚗</a>
-<a aria-label="Facebook" class="float ffacebook" href="https://www.facebook.com/thuexebinhduong24h" target="_blank" rel="noopener">f</a>
-<a aria-label="Messenger" class="float fmessenger" href="https://m.me/417943681413040" target="_blank" rel="noopener">➤</a>
-<a aria-label="Telegram" class="float ftelegram" href="https://telegram.me/xemocbai12" target="_blank" rel="noopener">➤</a>
-<a aria-label="Lên đầu trang" class="float top-btn" href="#top">↑</a>
-</div><script src="script.js"></script></body></html>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"Nhà xe có cho thuê xe tự lái không?","acceptedAnswer":{"@type":"Answer","text":"Dịch vụ trên website tập trung vào xe có tài xế."}},
+  {"@type":"Question","name":"Có nhận đón tại nhà không?","acceptedAnswer":{"@type":"Answer","text":"Có thể tư vấn điểm đón cụ thể theo lịch trình của khách."}},
+  {"@type":"Question","name":"Giá trên website có phải giá cuối cùng không?","acceptedAnswer":{"@type":"Answer","text":"Giá hiển thị là giá tham khảo theo tuyến. Nhân viên sẽ xác nhận lại lịch trình và báo giá trước khi chốt."}},
+  {"@type":"Question","name":"Có nhận hợp đồng cho công ty và đoàn không?","acceptedAnswer":{"@type":"Answer","text":"Có thể tư vấn xe và lịch trình theo nhu cầu doanh nghiệp, đoàn khách."}}
+ ]
+}
+</script>
+<div class="floating-contact" aria-label="Liên hệ nhanh">
+  <div class="side-chats">
+    <a class="side-chat zalo-chat" aria-label="Chat Zalo" href="https://zalo.me/0342127750" target="_blank" rel="noopener">
+      <span class="chat-icon">Z</span><span>Chat Zalo</span>
+    </a>
+    <a class="side-chat facebook-chat" aria-label="Chat Facebook" href="https://m.me/417943681413040" target="_blank" rel="noopener">
+      <span class="chat-icon">f</span><span>Chat Facebook</span>
+    </a>
+  </div>
+
+  <div class="bottom-bar">
+    <a class="bottom-item contact" aria-label="Liên hệ" href="#lien-he">
+      <span class="bottom-icon">✉</span><span>Liên hệ</span>
+    </a>
+    <a class="bottom-item call" aria-label="Gọi ngay" href="tel:0342127750">
+      <span class="bottom-icon">☎</span><span>Gọi ngay</span>
+    </a>
+    <a class="bottom-item messenger" aria-label="Messenger" href="https://m.me/417943681413040" target="_blank" rel="noopener">
+      <span class="bottom-icon">➤</span><span>Messenger</span>
+    </a>
+    <a class="bottom-item zalo" aria-label="Zalo" href="https://zalo.me/0342127750" target="_blank" rel="noopener">
+      <span class="bottom-icon">Z</span><span>Zalo</span>
+    </a>
+  </div>
+</div></div><script src="script.js"></script></body></html>
